@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <title>TOEIC Part 3 &amp; 4 高頻情境表達影音記憶系統</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-soft: #1e293b;
+      --card: #1e293b;
+      --card-2: #263348;
+      --border: #334155;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --pink: #ec4899;
+      --pink-soft: rgba(236, 72, 153, 0.16);
+      --pink-border: rgba(236, 72, 153, 0.45);
+      --blue: #38bdf8;
+      --blue-soft: rgba(56, 189, 248, 0.14);
+      --green: #34d399;
+      --green-soft: rgba(52, 211, 153, 0.14);
+      --amber: #fbbf24;
+      --purple: #c084fc;
+      --red: #fb7185;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+    body.light {
+      --bg: #f1f5f9;
+      --bg-soft: #e2e8f0;
+      --card: #ffffff;
+      --card-2: #f8fafc;
+      --border: #cbd5e1;
+      --text: #0f172a;
+      --muted: #475569;
+      --pink: #db2777;
+      --pink-soft: rgba(219, 39, 119, 0.1);
+      --pink-border: rgba(219, 39, 119, 0.35);
+      --blue-soft: rgba(2, 132, 199, 0.1);
+      --green-soft: rgba(16, 185, 129, 0.12);
+      --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Microsoft JhengHei", "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding-bottom: 152px;
+      line-height: 1.55;
+    }
+    button { font-family: inherit; cursor: pointer; }
+    a { color: var(--blue); text-decoration: none; }
+
+    /* Top Header */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    body.light .topbar { background: rgba(255, 255, 255, 0.93); }
+    .container { max-width: 1340px; margin: 0 auto; padding: 0 16px; }
+    .header-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 0;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand-icon {
+      width: 42px; height: 42px; border-radius: 12px;
+      background: linear-gradient(135deg, #0ea5e9, #ec4899);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; color: #fff;
+      box-shadow: 0 4px 14px rgba(14, 165, 233, 0.35);
+      flex-shrink: 0;
+    }
+    .brand h1 { margin: 0; font-size: 1.12rem; font-weight: 800; letter-spacing: 0.01em; }
+    .brand p { margin: 2px 0 0; font-size: 0.78rem; color: var(--muted); }
+
+    .controls-group { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
+    .part-switch {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 3px; border-radius: 999px;
+      background: var(--bg); border: 1px solid var(--border);
+    }
+    .part-link {
+      padding: 4px 10px; border-radius: 999px; font-size: 0.76rem; font-weight: 700;
+      color: var(--muted); transition: all 0.16s ease; white-space: nowrap;
+    }
+    .part-link:hover { color: var(--text); background: var(--card-2); }
+    .part-link.active {
+      background: linear-gradient(135deg, #0ea5e9, #ec4899);
+      color: #fff;
+    }
+
+    .pill-btn {
+      border: 1px solid var(--border);
+      background: var(--card-2);
+      color: var(--text);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.81rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.18s ease;
+      white-space: nowrap;
+    }
+    .pill-btn:hover { border-color: var(--pink); }
+    .pill-btn.active { background: var(--pink); border-color: var(--pink); color: #fff; }
+    .pill-btn.blue.active { background: #0284c7; border-color: #0284c7; color: #fff; }
+    .pill-btn.green.active { background: #059669; border-color: #059669; color: #fff; }
+    .pill-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+    .tabs-row { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 10px; scrollbar-width: none; }
+    .tabs-row::-webkit-scrollbar { display: none; }
+    .tab-btn {
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-size: 0.89rem;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: all 0.18s ease;
+    }
+    .tab-btn:hover { color: var(--text); background: var(--card-2); }
+    .tab-btn.active {
+      background: linear-gradient(135deg, rgba(14, 165, 233, 0.2), rgba(236, 72, 153, 0.2));
+      border-color: var(--pink);
+      color: var(--text);
+    }
+
+    /* Toolbar */
+    .toolbar {
+      margin: 16px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 16px;
+      box-shadow: var(--shadow);
+    }
+    .toolbar-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .search-box { flex: 1 1 260px; position: relative; display: flex; align-items: center; }
+    .search-box input {
+      width: 100%; background: var(--bg); border: 1px solid var(--border);
+      color: var(--text); padding: 8px 34px 8px 34px; border-radius: 10px; font-size: 0.9rem; outline: none;
+    }
+    .search-box input:focus { border-color: var(--blue); }
+    .search-box .s-ico { position: absolute; left: 10px; color: var(--muted); pointer-events: none; }
+    .search-clear {
+      position: absolute; right: 8px; background: transparent; border: none;
+      color: var(--muted); font-size: 0.9rem; padding: 2px 6px;
+    }
+    .search-clear:hover { color: var(--text); }
+
+    /* Layout for Tab 1 */
+    .main-grid { display: grid; grid-template-columns: 325px 1fr; gap: 18px; align-items: start; }
+    @media (max-width: 980px) { .main-grid { grid-template-columns: 1fr; } }
+    .sidebar {
+      position: sticky; top: 126px;
+      display: flex; flex-direction: column; gap: 14px;
+      max-height: calc(100vh - 275px); overflow-y: auto;
+      padding-right: 2px;
+    }
+    @media (max-width: 980px) { .sidebar { position: static; max-height: none; } }
+    .panel {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 14px; box-shadow: var(--shadow);
+    }
+    .panel-title {
+      font-size: 0.92rem; font-weight: 800; margin: 0 0 10px;
+      display: flex; align-items: center; justify-content: space-between; gap: 8px;
+    }
+
+    .progress-track {
+      width: 100%; height: 8px; border-radius: 999px;
+      background: var(--bg); border: 1px solid var(--border);
+      overflow: hidden; margin-bottom: 10px;
+    }
+    .progress-fill {
+      height: 100%; width: 0%;
+      background: linear-gradient(90deg, #10b981, #38bdf8);
+      transition: width 0.25s ease;
+    }
+
+    .jump-grid {
+      display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px;
+      max-height: 220px; overflow-y: auto; padding-right: 2px;
+    }
+    .jump-btn {
+      border: 1px solid var(--border); background: var(--card-2); color: var(--text);
+      border-radius: 7px; padding: 4px 0; font-size: 0.74rem; font-weight: 700;
+      text-align: center; font-family: Consolas, monospace; transition: all 0.14s;
+    }
+    .jump-btn:hover { border-color: var(--blue); }
+    .jump-btn.known {
+      background: var(--green-soft); border-color: rgba(52, 211, 153, 0.5); color: var(--green);
+    }
+    .jump-btn.active { background: var(--pink); border-color: var(--pink); color: #fff; }
+
+    .page-tabs { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
+    .page-tab {
+      font-size: 0.72rem; padding: 4px 7px; border-radius: 6px;
+      border: 1px solid var(--border); background: var(--card-2); color: var(--muted);
+    }
+    .page-tab.active { background: var(--blue); color: #0f172a; border-color: var(--blue); font-weight: 700; }
+    .book-thumb {
+      width: 100%; border-radius: 10px; border: 1px solid var(--border);
+      cursor: zoom-in; display: block; transition: transform 0.2s;
+    }
+    .book-thumb:hover { transform: scale(1.015); }
+    .book-caption { font-size: 0.76rem; color: var(--muted); margin-top: 6px; text-align: center; }
+
+    /* Expression Cards */
+    .feed-status {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 8px; margin-bottom: 12px; padding: 8px 14px;
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+      font-size: 0.84rem; color: var(--muted);
+    }
+    .items-list { display: flex; flex-direction: column; gap: 10px; }
+    .expr-card {
+      display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: start;
+      padding: 13px 15px; border-radius: 14px; border: 1px solid var(--border);
+      background: var(--card); box-shadow: var(--shadow); transition: all 0.16s ease;
+    }
+    .expr-card:hover { border-color: var(--blue); transform: translateY(-1px); }
+    .expr-card.known-card { border-left: 4px solid var(--green); }
+    .expr-card.active-item {
+      background: var(--pink-soft); border-color: var(--pink);
+      box-shadow: 0 0 0 2px var(--pink-soft), var(--shadow);
+    }
+
+    .item-left {
+      display: flex; flex-direction: column; align-items: center; gap: 6px; min-width: 66px;
+    }
+    .check-row {
+      display: flex; align-items: center; gap: 5px; cursor: pointer; user-select: none;
+    }
+    .known-checkbox {
+      width: 18px; height: 18px; accent-color: #10b981; cursor: pointer; margin: 0;
+    }
+    .num-badge {
+      background: var(--pink); color: #fff; font-weight: 800; font-size: 0.82rem;
+      padding: 3px 8px; border-radius: 7px; font-family: Consolas, monospace;
+    }
+    .expr-card.known-card .num-badge { background: #059669; }
+    .expr-card.active-item .num-badge { background: var(--pink); }
+
+    .time-chip {
+      font-family: Consolas, monospace; font-size: 0.76rem; font-weight: 700;
+      padding: 3px 8px; border-radius: 7px; background: var(--card-2);
+      border: 1px solid var(--border); color: var(--blue);
+      display: inline-flex; align-items: center; gap: 4px;
+    }
+    .expr-card.active-item .time-chip { background: var(--pink); color: #fff; border-color: var(--pink); }
+
+    .expr-body { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+    .expr-head {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+    }
+    .term-pill {
+      font-size: 0.94rem; font-weight: 800; color: var(--pink);
+      background: var(--pink-soft); border: 1px solid var(--pink-border);
+      padding: 2px 9px; border-radius: 7px;
+    }
+    .meaning-text { font-size: 0.92rem; font-weight: 700; color: var(--text); }
+    .scene-tag {
+      font-size: 0.72rem; padding: 2px 8px; border-radius: 999px;
+      border: 1px solid var(--border); background: var(--card-2); color: var(--muted);
+      font-weight: 600;
+    }
+    .duration-tag {
+      font-family: Consolas, monospace; font-size: 0.72rem; color: var(--muted);
+    }
+
+    .en-line { font-size: 1.04rem; font-weight: 600; word-break: break-word; }
+    .zh-line { font-size: 0.9rem; color: var(--muted); transition: filter 0.18s; }
+    .note-line {
+      font-size: 0.81rem; color: #f472b6; background: rgba(236, 72, 153, 0.08);
+      padding: 4px 10px; border-radius: 8px; border: 1px dashed var(--pink-border);
+      display: inline-block; align-self: flex-start;
+    }
+    body.light .note-line { color: #be185d; }
+    .tip-line {
+      font-size: 0.82rem; color: var(--muted); background: var(--blue-soft);
+      border-left: 3px solid var(--blue); padding: 5px 10px; border-radius: 7px;
+    }
+    body.light .tip-line { color: #334155; }
+
+    .kw {
+      color: var(--pink); font-weight: 800; background: var(--pink-soft);
+      padding: 0 4px; border-radius: 4px;
+    }
+    .blank-kw {
+      display: inline-block; min-width: 78px; text-align: center;
+      border-bottom: 2px dashed var(--pink); background: rgba(236, 72, 153, 0.16);
+      color: transparent; border-radius: 4px; padding: 0 6px; cursor: pointer; user-select: none;
+      transition: all 0.15s;
+    }
+    .blank-kw.revealed { color: var(--pink); font-weight: 800; background: var(--pink-soft); }
+
+    /* 4 Active Recall Masks */
+    .masked-kw .term-pill {
+      filter: blur(6px); user-select: none; cursor: pointer;
+    }
+    .masked-kw .term-pill.revealed { filter: none; }
+
+    .masked-zh .meaning-text,
+    .masked-zh .zh-line,
+    .masked-zh .note-line,
+    .masked-zh .tip-line {
+      filter: blur(6px); user-select: none; cursor: pointer;
+    }
+    .masked-zh .expr-body.revealed .meaning-text,
+    .masked-zh .expr-body.revealed .zh-line,
+    .masked-zh .expr-body.revealed .note-line,
+    .masked-zh .expr-body.revealed .tip-line,
+    .masked-zh .meaning-text.revealed,
+    .masked-zh .zh-line.revealed,
+    .masked-zh .note-line.revealed,
+    .masked-zh .tip-line.revealed { filter: none; }
+
+    .masked-en .term-pill,
+    .masked-en .en-line {
+      filter: blur(7px); user-select: none; cursor: pointer;
+    }
+    .masked-en .expr-body.revealed .term-pill,
+    .masked-en .expr-body.revealed .en-line,
+    .masked-en .term-pill.revealed,
+    .masked-en .en-line.revealed { filter: none; }
+
+    .masked-blind .expr-body .term-pill,
+    .masked-blind .expr-body .meaning-text,
+    .masked-blind .expr-body .en-line,
+    .masked-blind .expr-body .zh-line,
+    .masked-blind .expr-body .note-line,
+    .masked-blind .expr-body .tip-line {
+      filter: blur(8px); user-select: none; cursor: pointer;
+    }
+    .masked-blind .expr-body.revealed .term-pill,
+    .masked-blind .expr-body.revealed .meaning-text,
+    .masked-blind .expr-body.revealed .en-line,
+    .masked-blind .expr-body.revealed .zh-line,
+    .masked-blind .expr-body.revealed .note-line,
+    .masked-blind .expr-body.revealed .tip-line { filter: none; }
+
+    .live-sub-masked .live-blur {
+      filter: blur(7px); user-select: none; cursor: pointer; transition: filter 0.16s;
+    }
+    .live-sub-masked.revealed .live-blur { filter: none; }
+
+    .item-actions { display: flex; flex-direction: column; gap: 6px; }
+    .icon-btn {
+      border: 1px solid var(--border); background: var(--card-2); color: var(--text);
+      border-radius: 8px; padding: 5px 9px; font-size: 0.82rem;
+    }
+    .icon-btn:hover { border-color: var(--pink); }
+    .icon-btn.active { background: var(--pink); border-color: var(--pink); color: #fff; }
+
+    /* Tab 2: Scenes */
+    .scene-cards-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+      gap: 10px; margin-bottom: 18px;
+    }
+    .scene-card-btn {
+      text-align: left; border: 1px solid var(--border); background: var(--card); color: var(--text);
+      padding: 13px 14px; border-radius: 14px; transition: all 0.18s; box-shadow: var(--shadow);
+    }
+    .scene-card-btn:hover { border-color: var(--blue); transform: translateY(-2px); }
+    .scene-card-btn.active { border-color: var(--pink); box-shadow: 0 0 0 2px var(--pink-soft), var(--shadow); }
+    .scene-hero { display: grid; grid-template-columns: 1.15fr 1fr; gap: 18px; margin-bottom: 18px; }
+    @media (max-width: 960px) { .scene-hero { grid-template-columns: 1fr; } }
+    .svg-stage, .story-box {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 16px; box-shadow: var(--shadow);
+    }
+    .svg-stage svg { width: 100%; height: auto; display: block; border-radius: 12px; }
+    .hotspot-node { cursor: pointer; transition: opacity 0.15s; }
+    .hotspot-node:hover { opacity: 0.92; }
+    .hotspot-info {
+      margin-top: 12px; padding: 11px 13px; border-radius: 12px;
+      background: var(--card-2); border: 1px solid var(--border);
+    }
+    .story-paragraph {
+      font-size: 0.98rem; line-height: 2.05; background: var(--card-2);
+      padding: 14px; border-radius: 12px; border: 1px solid var(--border);
+    }
+    .story-chip {
+      display: inline-flex; align-items: center; gap: 4px;
+      border: 1px solid var(--blue); background: var(--blue-soft); color: var(--blue);
+      border-radius: 999px; padding: 1px 8px; margin: 0 2px;
+      font-size: 0.78rem; font-weight: 700; vertical-align: baseline;
+      transition: all 0.15s;
+    }
+    .story-chip:hover { background: var(--blue); color: #0f172a; }
+    .story-chip.active { background: var(--pink); border-color: var(--pink); color: #fff; }
+    .story-chip.known { border-color: var(--green); color: var(--green); background: var(--green-soft); }
+    .story-chip.known.active { background: var(--pink); border-color: var(--pink); color: #fff; }
+
+    /* Tab 3: Comparisons */
+    .comp-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 16px; margin-bottom: 22px;
+    }
+    @media (max-width: 480px) { .comp-grid { grid-template-columns: 1fr; } }
+    .comp-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 16px; box-shadow: var(--shadow);
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .comp-entries-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px;
+    }
+    .comp-entry-box {
+      border: 1px solid var(--border); background: var(--bg);
+      border-radius: 12px; padding: 11px; display: flex; flex-direction: column; gap: 5px;
+    }
+    body.light .comp-entry-box { background: #f8fafc; }
+    .comp-entry-box:hover { border-color: var(--blue); }
+    .rate-badge {
+      font-size: 0.76rem; font-weight: 800; padding: 3px 10px; border-radius: 999px;
+      background: var(--green-soft); color: var(--green); border: 1px solid rgba(52, 211, 153, 0.4);
+    }
+    .rate-badge.high { background: var(--pink-soft); color: var(--pink); border-color: var(--pink-border); }
+    .rate-badge.blue { background: var(--blue-soft); color: var(--blue); border-color: rgba(56, 189, 248, 0.4); }
+    .rate-badge.amber { background: rgba(251, 191, 36, 0.16); color: var(--amber); border-color: rgba(251, 191, 36, 0.45); }
+
+    table.data-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    table.data-table th, table.data-table td { border-bottom: 1px solid var(--border); padding: 10px 8px; text-align: left; vertical-align: top; }
+    table.data-table th { color: var(--muted); font-size: 0.8rem; }
+
+    /* Tab 4: Quiz */
+    .quiz-box {
+      max-width: 820px; margin: 0 auto; background: var(--card);
+      border: 1px solid var(--border); border-radius: 18px; padding: 24px; box-shadow: var(--shadow);
+    }
+    .quiz-options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+    @media (max-width: 640px) { .quiz-options { grid-template-columns: 1fr; } }
+    .quiz-opt {
+      text-align: left; padding: 14px; border-radius: 12px;
+      border: 1px solid var(--border); background: var(--bg); color: var(--text); font-size: 0.94rem;
+      transition: all 0.15s;
+    }
+    body.light .quiz-opt { background: #f8fafc; }
+    .quiz-opt:hover { border-color: var(--blue); }
+    .quiz-opt.correct { border-color: var(--green); background: var(--green-soft); }
+    .quiz-opt.wrong { border-color: var(--red); background: rgba(251, 113, 133, 0.16); }
+    .rule-box {
+      background: var(--card-2); border-left: 4px solid var(--pink);
+      border-radius: 10px; padding: 12px 14px; font-size: 0.92rem;
+    }
+
+    /* Sticky Bottom Player */
+    .player-bar {
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+      background: rgba(15, 23, 42, 0.96); backdrop-filter: blur(14px);
+      border-top: 1px solid var(--border); padding: 10px 16px 12px;
+      box-shadow: 0 -8px 28px rgba(0, 0, 0, 0.45);
+    }
+    body.light .player-bar { background: rgba(255, 255, 255, 0.96); }
+    .live-sub {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px;
+      margin-bottom: 8px; padding: 6px 12px; border-radius: 10px;
+      background: var(--card-2); border: 1px solid var(--border);
+    }
+    .player-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .play-main {
+      background: linear-gradient(135deg, #0ea5e9, #ec4899);
+      color: #fff; border: none; border-radius: 999px; padding: 8px 18px; font-weight: 800; font-size: 0.9rem;
+    }
+    .seek-wrap { flex: 1 1 200px; display: flex; align-items: center; gap: 10px; }
+    .seek-wrap input[type="range"] { flex: 1; accent-color: var(--pink); }
+
+    /* Lightbox */
+    .lightbox {
+      position: fixed; inset: 0; z-index: 100; background: rgba(0, 0, 0, 0.88);
+      display: none; flex-direction: column; align-items: center; justify-content: center; padding: 16px; gap: 12px;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-width: 95vw; max-height: 82vh; border-radius: 10px; box-shadow: 0 20px 50px rgba(0,0,0,0.6); }
+    .lightbox-bar {
+      display: flex; align-items: center; gap: 10px; color: #f8fafc;
+      background: rgba(30, 41, 59, 0.92); padding: 8px 14px; border-radius: 999px; border: 1px solid #475569;
+    }
+    .hidden { display: none !important; }
+
+    /* Secret Gate */
+    .secret-gate {
+      position: fixed; inset: 0; z-index: 200;
+      background: rgba(15, 23, 42, 0.96); backdrop-filter: blur(18px);
+      display: flex; align-items: center; justify-content: center; padding: 20px;
+    }
+    .secret-card {
+      width: 100%; max-width: 420px; background: var(--card);
+      border: 1px solid var(--pink-border); border-radius: 20px;
+      padding: 28px 24px; text-align: center; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+    }
+    .secret-card input {
+      width: 100%; margin: 14px 0 10px; padding: 11px 14px; border-radius: 10px;
+      border: 1px solid var(--border); background: var(--bg); color: var(--text);
+      font-size: 1rem; text-align: center; outline: none;
+    }
+  </style>
+</head>
+<body>
+
+<div id="secretGate" class="secret-gate hidden">
+  <div class="secret-card">
+    <div style="font-size:2.4rem;margin-bottom:6px;">🔒</div>
+    <h2 style="margin:0 0 6px;font-size:1.25rem;">私密學習空間（Part 3 &amp; 4）</h2>
+    <p style="margin:0;font-size:0.88rem;color:var(--muted);">此多益 Part 3 &amp; 4 影音情境筆記僅限親友私下分享，請輸入通行碼，或使用完整私密連結開啟。</p>
+    <input id="secretInput" type="password" placeholder="輸入通行碼..." onkeydown="if(event.key==='Enter')submitSecretKey()" />
+    <button class="play-main" style="width:100%;padding:11px 18px;font-size:0.98rem;" onclick="submitSecretKey()">🔓 解鎖進入</button>
+    <div id="secretErr" style="color:var(--red);font-size:0.84rem;margin-top:10px;min-height:1.2em;"></div>
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="container">
+    <div class="header-row">
+      <div class="brand">
+        <div class="brand-icon">🎙️</div>
+        <div>
+          <h1>TOEIC Part 3 &amp; 4 高頻情境表達影音記憶系統</h1>
+          <p>001–114 對話與獨白核心句型 × 15:47 原音同步 × 6 大職場情境</p>
+        </div>
+      </div>
+
+      <div class="controls-group">
+        <nav class="part-switch" aria-label="快速切換多益單元">
+          <a class="part-link" href="https://wenny0419.github.io/toeic-part1-study/?key=toeic990" target="_blank" rel="noopener">Part 1</a>
+          <a class="part-link" href="https://wenny0419.github.io/toeic-part2-study/?key=toeic990" target="_blank" rel="noopener">Part 2</a>
+          <span class="part-link active" aria-current="page">Part 3 &amp; 4</span>
+        </nav>
+
+        <button class="pill-btn active" data-mask="none" onclick="setMaskMode('none')">👁️ 顯示全部</button>
+        <button class="pill-btn" data-mask="kw" onclick="setMaskMode('kw')">🔑 遮關鍵詞</button>
+        <button class="pill-btn" data-mask="zh" onclick="setMaskMode('zh')">🙈 遮中文</button>
+        <button class="pill-btn" data-mask="en" onclick="setMaskMode('en')">📝 遮英文例句</button>
+        <button class="pill-btn" data-mask="blind" onclick="setMaskMode('blind')">🎧 盲聽純音訊</button>
+
+        <button class="pill-btn" id="shareBtn" onclick="copyShareLink()">🔗 複製私密網址</button>
+        <button class="pill-btn blue" id="themeBtn" onclick="toggleTheme()">☀️ 淺色</button>
+      </div>
+    </div>
+
+    <div class="tabs-row">
+      <button class="tab-btn active" data-tab="sync" onclick="switchTab('sync')">📖 課本原圖與同步逐條</button>
+      <button class="tab-btn" data-tab="scenes" onclick="switchTab('scenes')">🗺️ 6 大職場情境劇場</button>
+      <button class="tab-btn" data-tab="compare" onclick="switchTab('compare')">⚡ 同義換字與一字多義</button>
+      <button class="tab-btn" data-tab="quiz" onclick="switchTab('quiz')">🎯 聽音辨義測驗</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <!-- TAB 1 -->
+  <section id="tab-sync">
+    <div class="toolbar">
+      <div class="toolbar-row">
+        <div class="search-box">
+          <span class="s-ico">🔍</span>
+          <input id="searchInput" type="text" placeholder="搜尋編號、關鍵詞、例句、中文、同義筆記（例：008, promotion, relocation, heads-up, 報價）..." oninput="renderItems()" />
+          <button class="search-clear hidden" id="searchClearBtn" title="清除搜尋" onclick="clearSearch()">✕</button>
+        </div>
+
+        <div class="controls-group">
+          <button class="pill-btn green" id="uncheckedOnlyBtn" onclick="toggleOnlyUnchecked()">☑️ 只看未勾選 (114)</button>
+          <button class="pill-btn" onclick="batchCheckVisible(true)" title="將目前畫面篩選出的表達全部勾選為已掌握">✅ 勾選目前清單</button>
+          <button class="pill-btn" onclick="batchResetAll()" title="清除全部 114 條已掌握勾選紀錄">↺ 重置勾選</button>
+        </div>
+      </div>
+
+      <div class="toolbar-row">
+        <div class="controls-group" id="pageFilterGroup"></div>
+        <div class="controls-group" id="sceneFilterGroup"></div>
+      </div>
+    </div>
+
+    <div class="main-grid">
+      <aside class="sidebar">
+        <div class="panel">
+          <div class="panel-title">
+            <span>☑️ 課本掌握進度與跳轉</span>
+            <span id="progressCount" style="font-size:0.78rem;color:var(--green);">已掌握 0 / 114</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+          <div id="jumpGrid" class="jump-grid"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-title"><span>📖 原書講義掃描（點擊放大）</span></div>
+          <div id="pageTabs" class="page-tabs"></div>
+          <img id="bookPreviewImg" class="book-thumb" src="images/page1_001_021.jpg" alt="課本原圖掃描" onclick="openLightbox()" />
+          <div class="book-caption" id="bookCaption">Page 1｜高頻表達 001–021</div>
+        </div>
+      </aside>
+
+      <div>
+        <div class="feed-status" id="feedStatus"></div>
+        <div id="itemsContainer" class="items-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAB 2 -->
+  <section id="tab-scenes" class="hidden">
+    <div style="margin-top:16px;" class="scene-cards-grid" id="sceneSelectorGrid"></div>
+    <div id="sceneStageArea"></div>
+  </section>
+
+  <!-- TAB 3 -->
+  <section id="tab-compare" class="hidden">
+    <div style="margin-top:16px;">
+      <div class="toolbar" style="margin-top:0;">
+        <div class="toolbar-row">
+          <div>
+            <h2 style="margin:0;font-size:1.14rem;">⚡ Part 3 &amp; 4 高頻同義換字（Paraphrasing）與一字多義總整理</h2>
+            <p style="margin:3px 0 0;font-size:0.83rem;color:var(--muted);">音檔聽到 A 詞，選項往往改寫為 B 詞！點擊任一條目立即試聽 08.mp3 原音片段。</p>
+          </div>
+          <div class="controls-group" id="compFilterGroup">
+            <button class="pill-btn active" data-ctype="all" onclick="setCompFilter('all')">全部 (8)</button>
+            <button class="pill-btn" data-ctype="paraphrase" onclick="setCompFilter('paraphrase')">🔄 同義換字</button>
+            <button class="pill-btn" data-ctype="polysemy" onclick="setCompFilter('polysemy')">🎭 一字多義</button>
+            <button class="pill-btn" data-ctype="antonym_collocation" onclick="setCompFilter('antonym_collocation')">⚖️ 時程對比</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="compCardsGrid" class="comp-grid"></div>
+
+      <div class="panel">
+        <div class="panel-title">
+          <span>🔥 考場「聽音秒換字」核心速查總表（點擊編號試聽）</span>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="data-table" id="compSummaryTable"></table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAB 4 -->
+  <section id="tab-quiz" class="hidden" style="margin-top:18px;">
+    <div class="quiz-box">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px;">
+        <div>
+          <h2 style="margin:0;font-size:1.2rem;">🎯 Part 3 &amp; 4 聽音辨義實戰測驗</h2>
+          <p style="margin:4px 0 0;font-size:0.85rem;color:var(--muted);">精準截播 `08.mp3` 單題片段，測驗你能否聽出核心句意或高頻關鍵詞！</p>
+        </div>
+        <div class="controls-group">
+          <span class="rate-badge" id="quizScoreBadge">得分 0 / 0</span>
+          <span class="rate-badge amber" id="quizStreakBadge">🔥 連勝 0</span>
+          <button class="pill-btn active" onclick="nextQuizQuestion()">🎲 下一題</button>
+        </div>
+      </div>
+
+      <div class="controls-group" style="margin-bottom:10px;">
+        <button class="pill-btn active" id="qModeMeaning" onclick="setQuizMode('meaning')">🎧 聽音辨中文句意</button>
+        <button class="pill-btn" id="qModeKw" onclick="setQuizMode('keyword')">🔑 聽音填英文關鍵詞</button>
+      </div>
+
+      <div class="controls-group" style="margin-bottom:14px;">
+        <span style="font-size:0.8rem;color:var(--muted);font-weight:700;">出題範圍：</span>
+        <button class="pill-btn active" id="qPoolAll" onclick="setQuizPool('all')">🌐 全部題庫 (114)</button>
+        <button class="pill-btn" id="qPoolUnchecked" onclick="setQuizPool('unchecked')">⬜ 只考未勾選 (<span id="quizUncheckedCount">114</span>)</button>
+        <button class="pill-btn" id="qPoolMissed" onclick="setQuizPool('missed')" disabled>🔁 錯題重練 (<span id="quizMissedCount">0</span>)</button>
+      </div>
+
+      <div id="quizArena"></div>
+    </div>
+
+    <div class="panel" style="max-width:820px;margin:18px auto 0;">
+      <div class="panel-title">
+        <span>🔁 本次測驗錯題清單</span>
+        <button class="pill-btn" onclick="clearMissedQuiz()">清除錯題</button>
+      </div>
+      <div id="missedQuizContainer"></div>
+    </div>
+
+    <div class="panel" style="max-width:820px;margin:16px auto 0;">
+      <div class="panel-title">
+        <span>📌 我的難點標記清單</span>
+        <button class="pill-btn" onclick="clearBookmarks()">清除標記</button>
+      </div>
+      <div id="bookmarksContainer"></div>
+    </div>
+  </section>
+</main>
+
+<div class="player-bar">
+  <div class="container">
+    <div class="live-sub" id="liveSubBar" onclick="if(state.maskMode==='blind')this.classList.toggle('revealed')">
+      <div style="display:flex;align-items:center;gap:10px;min-width:0;flex:1;">
+        <span id="liveEmoji" style="font-size:1.4rem;">🎙️</span>
+        <div style="min-width:0;flex:1;">
+          <div id="liveEn" class="live-blur" style="font-weight:800;font-size:0.93rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">準備就緒 — 點擊任意句型卡片或按下播放開始同步複習</div>
+          <div id="liveZh" class="live-blur" style="font-size:0.83rem;color:var(--green);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">快捷鍵：空白鍵 播放/暫停 ｜ ← / → 上/下一條 ｜ L 單條循環 ｜ R 重播本條</div>
+        </div>
+      </div>
+      <span id="livePointBadge" class="num-badge" style="font-size:0.76rem;">READY</span>
+    </div>
+
+    <div class="player-controls">
+      <button class="pill-btn" onclick="stepItem(-1)">⏮ 上一條</button>
+      <button class="play-main" id="playPauseBtn" onclick="togglePlay()">▶ 播放</button>
+      <button class="pill-btn" onclick="stepItem(1)">下一條 ⏭</button>
+      <button class="pill-btn" id="loopBtn" onclick="toggleLoopCurrent()">🔁 單條循環：關</button>
+      <button class="pill-btn active" id="autoScrollBtn" onclick="toggleAutoScroll()">📜 自動跟隨：開</button>
+
+      <div class="seek-wrap">
+        <span id="currTimeText" style="font-family:Consolas,monospace;font-size:0.8rem;">00:00</span>
+        <input id="seekSlider" type="range" min="0" max="947.68" step="0.1" value="0" oninput="onSeek(this.value)" />
+        <span id="durTimeText" style="font-family:Consolas,monospace;font-size:0.8rem;">15:47</span>
+      </div>
+
+      <div class="controls-group">
+        <button class="pill-btn" data-speed="0.75" onclick="setSpeed(0.75)">0.75x</button>
+        <button class="pill-btn active" data-speed="1" onclick="setSpeed(1)">1.0x</button>
+        <button class="pill-btn" data-speed="1.25" onclick="setSpeed(1.25)">1.25x</button>
+        <button class="pill-btn" data-speed="1.5" onclick="setSpeed(1.5)">1.5x</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightboxImg" src="" alt="放大課本原圖" onclick="event.stopPropagation()" />
+  <div class="lightbox-bar" onclick="event.stopPropagation()">
+    <button class="pill-btn" onclick="stepLightboxPage(-1)">◀ 上一頁</button>
+    <span id="lightboxCaption" style="font-size:0.85rem;font-weight:700;">Page 1</span>
+    <button class="pill-btn" onclick="stepLightboxPage(1)">下一頁 ▶</button>
+    <button class="pill-btn active" onclick="closeLightbox()">✕ 關閉 (Esc)</button>
+  </div>
+</div>
+
+<audio id="audio" src="08.mp3" preload="auto"></audio>
+<script src="data.js"></script>
+<script>
+const DATA = window.TOEIC_P34_DATA;
+const audio = document.getElementById('audio');
+const KNOWN_STORAGE_KEY = (DATA && DATA.meta && DATA.meta.storageKeyKnown) || 'toeic_p34_known';
+const BOOKMARK_STORAGE_KEY = 'toeic_p34_bookmarks';
+const THEME_STORAGE_KEY = 'toeic_p34_theme';
+
+function safeStorageGet(store, key, fallback) {
+  try {
+    const val = store.getItem(key);
+    return val === null ? fallback : val;
+  } catch (e) {
+    return fallback;
+  }
+}
+function safeStorageSet(store, key, val) {
+  try { store.setItem(key, val); } catch (e) {}
+}
+function safeJsonParse(str, fallback) {
+  try { return JSON.parse(str); } catch (e) { return fallback; }
+}
+
+const ITEM_MAP = Object.create(null);
+const PAGE_MAP = Object.create(null);
+const SCENE_MAP = Object.create(null);
+if (DATA) {
+  DATA.items.forEach(it => { ITEM_MAP[it.id] = it; });
+  DATA.pages.forEach(pg => { PAGE_MAP[pg.id] = pg; });
+  DATA.scenes.forEach(sc => { SCENE_MAP[sc.id] = sc; });
+}
+
+let state = {
+  tab: 'sync',
+  maskMode: 'none',
+  pageFilter: 'all',
+  sceneFilter: 'all',
+  onlyUnchecked: false,
+  compFilter: 'all',
+  activePageId: 'p1',
+  activeScene: 'office',
+  activeHotspotId: null,
+  filterByHotspot: false,
+  activeItemId: null,
+  loopRange: null,
+  stopAtEnd: null,
+  sequenceQueue: [],
+  autoScroll: true,
+  quizMode: 'meaning',
+  quizPool: 'all',
+  quizScore: 0,
+  quizTotal: 0,
+  quizStreak: 0,
+  quizBestStreak: 0,
+  missedQuizIds: [],
+  currentQuiz: null,
+  known: safeJsonParse(safeStorageGet(localStorage, KNOWN_STORAGE_KEY, '[]'), []),
+  bookmarks: safeJsonParse(safeStorageGet(localStorage, BOOKMARK_STORAGE_KEY, '[]'), [])
+};
+
+if (!Array.isArray(state.known)) state.known = [];
+if (!Array.isArray(state.bookmarks)) state.bookmarks = [];
+
+function escHtml(str) {
+  return String(str || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function fmtTime(sec) {
+  const s = Math.max(0, Math.floor(sec || 0));
+  return `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
+}
+
+function isKnown(id) {
+  return state.known.includes(id);
+}
+
+function renderEnFromSegments(it, isMaskKw) {
+  if (Array.isArray(it.enSegments) && it.enSegments.length) {
+    return it.enSegments.map(seg => {
+      const safe = escHtml(seg.text);
+      if (!seg.bold) return safe;
+      if (isMaskKw) {
+        return `<span class="blank-kw" title="點擊揭曉關鍵詞" onclick="event.stopPropagation();this.classList.toggle('revealed')">${safe}</span>`;
+      }
+      return `<span class="kw">${safe}</span>`;
+    }).join('');
+  }
+  return formatEnMarkdown(it.enMarkdown || it.en, isMaskKw);
+}
+
+function formatEnMarkdown(mdText, isMaskKw) {
+  const esc = escHtml(mdText || '');
+  return esc.replace(/\*\*(.+?)\*\*/g, (_, word) => {
+    if (isMaskKw) {
+      return `<span class="blank-kw" title="點擊揭曉關鍵詞" onclick="event.stopPropagation();this.classList.toggle('revealed')">${word}</span>`;
+    }
+    return `<span class="kw">${word}</span>`;
+  });
+}
+
+function getSceneObj(id) {
+  return SCENE_MAP[id] || DATA.scenes[0];
+}
+
+function initTheme() {
+  const saved = safeStorageGet(localStorage, THEME_STORAGE_KEY, 'dark');
+  if (saved === 'light') document.body.classList.add('light');
+  updateThemeBtn();
+}
+
+function updateThemeBtn() {
+  const isLight = document.body.classList.contains('light');
+  document.getElementById('themeBtn').textContent = isLight ? '🌙 深色' : '☀️ 淺色';
+}
+
+function toggleTheme() {
+  document.body.classList.toggle('light');
+  safeStorageSet(localStorage, THEME_STORAGE_KEY, document.body.classList.contains('light') ? 'light' : 'dark');
+  updateThemeBtn();
+}
+
+function switchTab(tab) {
+  state.tab = tab;
+  ['sync', 'scenes', 'compare', 'quiz'].forEach(t => {
+    document.getElementById('tab-' + t).classList.toggle('hidden', t !== tab);
+  });
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+  if (tab === 'scenes') renderScenes();
+  if (tab === 'compare') renderComparisons();
+  if (tab === 'quiz') {
+    updateQuizCounts();
+    if (!state.currentQuiz) nextQuizQuestion();
+    renderMissedQuizList();
+    renderBookmarks();
+  }
+}
+
+function setMaskMode(mode) {
+  state.maskMode = mode;
+  document.querySelectorAll('[data-mask]').forEach(b => b.classList.toggle('active', b.dataset.mask === mode));
+  const liveBar = document.getElementById('liveSubBar');
+  liveBar.classList.toggle('live-sub-masked', mode === 'blind');
+  liveBar.classList.remove('revealed');
+  renderItems();
+  if (state.tab === 'scenes') renderScenes();
+}
+
+function setPageFilter(pid) {
+  state.pageFilter = pid;
+  renderFilterChips();
+  renderItems();
+  if (pid !== 'all' && PAGE_MAP[pid]) selectBookPage(pid);
+}
+
+function setSceneFilter(sid) {
+  state.sceneFilter = sid;
+  renderFilterChips();
+  renderItems();
+}
+
+function toggleOnlyUnchecked() {
+  state.onlyUnchecked = !state.onlyUnchecked;
+  renderFilterChips();
+  renderItems();
+}
+
+function clearSearch() {
+  const inp = document.getElementById('searchInput');
+  inp.value = '';
+  renderItems();
+  inp.focus();
+}
+
+function getFilteredItems() {
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  return DATA.items.filter(it => {
+    if (state.pageFilter !== 'all' && it.page !== state.pageFilter) return false;
+    if (state.sceneFilter !== 'all' && it.sceneId !== state.sceneFilter) return false;
+    if (state.onlyUnchecked && isKnown(it.id)) return false;
+    if (!q) return true;
+    const hay = `${it.id} ${it.term} ${it.meaning} ${it.en} ${it.zh} ${it.note || ''} ${it.memoryTip || ''} ${it.sceneName} ${it.sceneShortName}`.toLowerCase();
+    return hay.includes(q);
+  });
+}
+
+function renderFilterChips() {
+  const pf = document.getElementById('pageFilterGroup');
+  pf.innerHTML = [
+    `<button class="pill-btn ${state.pageFilter === 'all' ? 'active' : ''}" onclick="setPageFilter('all')">全部 (${DATA.items.length})</button>`,
+    ...DATA.pages.map(pg =>
+      `<button class="pill-btn ${state.pageFilter === pg.id ? 'active' : ''}" onclick="setPageFilter('${pg.id}')">P.${pg.num} (${pg.range})</button>`
+    )
+  ].join('');
+
+  const sf = document.getElementById('sceneFilterGroup');
+  sf.innerHTML = [
+    `<button class="pill-btn blue ${state.sceneFilter === 'all' ? 'active' : ''}" onclick="setSceneFilter('all')">🌐 全部情境</button>`,
+    ...DATA.scenes.map(sc =>
+      `<button class="pill-btn blue ${state.sceneFilter === sc.id ? 'active' : ''}" onclick="setSceneFilter('${sc.id}')">${sc.icon} ${escHtml(sc.shortName)}</button>`
+    )
+  ].join('');
+
+  const unBtn = document.getElementById('uncheckedOnlyBtn');
+  const uncheckedCount = DATA.items.length - state.known.length;
+  unBtn.classList.toggle('active', state.onlyUnchecked);
+  unBtn.textContent = `☑️ 只看未勾選 (${uncheckedCount})`;
+}
+
+function renderJumpAndPages() {
+  document.getElementById('jumpGrid').innerHTML = DATA.items.map(it => {
+    const kCls = isKnown(it.id) ? 'known' : '';
+    const aCls = state.activeItemId === it.id ? 'active' : '';
+    return `<button class="jump-btn ${kCls} ${aCls}" id="jump-${it.id}" title="${escHtml(it.id + ' ' + it.term + ' - ' + it.meaning)}" onclick="jumpToItem('${it.id}')">${it.id}</button>`;
+  }).join('');
+
+  document.getElementById('pageTabs').innerHTML = DATA.pages.map(pg =>
+    `<button class="page-tab ${state.activePageId === pg.id ? 'active' : ''}" data-page-id="${pg.id}" onclick="selectBookPage('${pg.id}')">P.${pg.num} (${pg.range})</button>`
+  ).join('');
+
+  updateProgressCount();
+}
+
+function selectBookPage(pageId) {
+  const pg = PAGE_MAP[pageId] || DATA.pages[0];
+  state.activePageId = pg.id;
+  document.getElementById('bookPreviewImg').src = pg.img;
+  document.getElementById('bookCaption').textContent = pg.title;
+  document.querySelectorAll('.page-tab').forEach(b => b.classList.toggle('active', b.dataset.pageId === pg.id));
+}
+
+function openLightbox() {
+  const pg = PAGE_MAP[state.activePageId] || DATA.pages[0];
+  document.getElementById('lightboxImg').src = pg.img;
+  document.getElementById('lightboxCaption').textContent = pg.title;
+  document.getElementById('lightbox').classList.add('open');
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+}
+
+function stepLightboxPage(delta) {
+  const idx = DATA.pages.findIndex(p => p.id === state.activePageId);
+  const nextIdx = (idx + delta + DATA.pages.length) % DATA.pages.length;
+  selectBookPage(DATA.pages[nextIdx].id);
+  openLightbox();
+}
+
+function jumpToItem(id) {
+  const it = ITEM_MAP[id];
+  if (!it) return;
+  const el = document.getElementById('row-' + id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+  playItem(id, false);
+}
+
+function saveKnown() {
+  safeStorageSet(localStorage, KNOWN_STORAGE_KEY, JSON.stringify(state.known));
+  updateProgressCount();
+  renderFilterChips();
+  updateQuizCounts();
+}
+
+function updateProgressCount() {
+  const total = DATA.items.length;
+  const count = state.known.length;
+  const pct = Math.round((count / total) * 100);
+  document.getElementById('progressCount').textContent = `已掌握 ${count} / ${total} (${pct}%)`;
+  document.getElementById('progressFill').style.width = `${pct}%`;
+}
+
+function toggleKnown(id) {
+  const idx = state.known.indexOf(id);
+  if (idx >= 0) state.known.splice(idx, 1);
+  else state.known.push(id);
+  saveKnown();
+  renderJumpAndPages();
+  renderItems();
+  if (state.tab === 'scenes') renderScenes();
+}
+
+function batchCheckVisible(checked) {
+  const visible = getFilteredItems();
+  if (!visible.length) return;
+  const set = new Set(state.known);
+  visible.forEach(it => {
+    if (checked) set.add(it.id);
+    else set.delete(it.id);
+  });
+  state.known = DATA.items.map(i => i.id).filter(id => set.has(id));
+  saveKnown();
+  renderJumpAndPages();
+  renderItems();
+  if (state.tab === 'scenes') renderScenes();
+}
+
+function batchResetAll() {
+  if (!state.known.length) return;
+  if (!confirm(`確定要清除全部 ${state.known.length} 條「已掌握」勾選紀錄嗎？`)) return;
+  state.known = [];
+  saveKnown();
+  renderJumpAndPages();
+  renderItems();
+  if (state.tab === 'scenes') renderScenes();
+}
+
+function toggleBookmark(itemId) {
+  const idx = state.bookmarks.indexOf(itemId);
+  if (idx >= 0) state.bookmarks.splice(idx, 1);
+  else state.bookmarks.push(itemId);
+  safeStorageSet(localStorage, BOOKMARK_STORAGE_KEY, JSON.stringify(state.bookmarks));
+  renderItems();
+  if (state.tab === 'scenes') renderScenes();
+  if (state.tab === 'quiz') renderBookmarks();
+}
+
+function clearBookmarks() {
+  state.bookmarks = [];
+  safeStorageSet(localStorage, BOOKMARK_STORAGE_KEY, '[]');
+  renderBookmarks();
+  renderItems();
+}
+
+function getMaskClass() {
+  if (state.maskMode === 'kw') return 'masked-kw';
+  if (state.maskMode === 'zh') return 'masked-zh';
+  if (state.maskMode === 'en') return 'masked-en';
+  if (state.maskMode === 'blind') return 'masked-blind';
+  return '';
+}
+
+function renderItemRow(it, stopAtEnd = false) {
+  const sc = getSceneObj(it.sceneId);
+  const isMaskKw = state.maskMode === 'kw';
+  const maskClass = getMaskClass();
+  const known = isKnown(it.id);
+  const isBm = state.bookmarks.includes(it.id);
+  const isLooping = state.loopRange && state.loopRange.id === it.id;
+  const isActive = state.activeItemId === it.id;
+
+  return `
+    <article class="expr-card ${known ? 'known-card' : ''} ${isActive ? 'active-item' : ''} ${maskClass}"
+         id="row-${it.id}" data-item-id="${it.id}" onclick="playItem('${it.id}', ${stopAtEnd})">
+      <div class="item-left" onclick="event.stopPropagation()">
+        <label class="check-row" title="勾選課本已掌握項目">
+          <input class="known-checkbox" type="checkbox" ${known ? 'checked' : ''} onchange="toggleKnown('${it.id}')" />
+          <span class="num-badge">${it.id}</span>
+        </label>
+        <button class="time-chip" title="播放本條原音 (${it.timeLabel})" onclick="playItem('${it.id}', ${stopAtEnd})">▶ ${fmtTime(it.start)}</button>
+      </div>
+
+      <div class="expr-body" onclick="if(state.maskMode==='blind'||state.maskMode==='zh'||state.maskMode==='en'){event.stopPropagation();this.classList.toggle('revealed');}">
+        <div class="expr-head">
+          <span class="term-pill" onclick="if(state.maskMode==='kw'||state.maskMode==='en'){event.stopPropagation();this.classList.toggle('revealed');}">${escHtml(it.term)}</span>
+          <span class="meaning-text" onclick="if(state.maskMode==='zh'){event.stopPropagation();this.classList.toggle('revealed');}">${escHtml(it.meaning)}</span>
+          <span class="scene-tag">${sc.icon} ${escHtml(sc.shortName)}</span>
+          <span class="duration-tag">${escHtml(it.page.toUpperCase())} · ${escHtml(it.timeLabel)}</span>
+        </div>
+
+        <div class="en-line" onclick="if(state.maskMode==='en'){event.stopPropagation();this.classList.toggle('revealed');}">${renderEnFromSegments(it, isMaskKw)}</div>
+        <div class="zh-line" onclick="if(state.maskMode==='zh'){event.stopPropagation();this.classList.toggle('revealed');}">${escHtml(it.zh)}</div>
+        ${it.note ? `<div class="note-line" onclick="if(state.maskMode==='zh'){event.stopPropagation();this.classList.toggle('revealed');}">📝 補充：${escHtml(it.note)}</div>` : ''}
+        ${it.memoryTip ? `<div class="tip-line" onclick="if(state.maskMode==='zh'){event.stopPropagation();this.classList.toggle('revealed');}">💡 <strong>記憶訣竅：</strong>${escHtml(it.memoryTip)}</div>` : ''}
+      </div>
+
+      <div class="item-actions" onclick="event.stopPropagation()">
+        <button class="icon-btn ${isLooping ? 'active' : ''}" title="單條循環跟讀" onclick="toggleLoopItem('${it.id}')">🔁</button>
+        <button class="icon-btn ${isBm ? 'active' : ''}" title="加入難點標記" onclick="toggleBookmark('${it.id}')">📌</button>
+      </div>
+    </article>
+  `;
+}
+
+function renderItems() {
+  const inp = document.getElementById('searchInput');
+  const q = inp.value.trim();
+  document.getElementById('searchClearBtn').classList.toggle('hidden', !q);
+
+  const filtered = getFilteredItems();
+  const statusEl = document.getElementById('feedStatus');
+  const maskLabels = {
+    none: '顯示全部',
+    kw: '🔑 遮關鍵詞（點擊空格揭曉）',
+    zh: '🙈 遮中文（點擊中文區揭曉）',
+    en: '📝 遮英文例句（點擊英文區揭曉）',
+    blind: '🎧 盲聽純音訊（點擊卡片內容揭曉）'
+  };
+  statusEl.innerHTML = `
+    <span>顯示 <strong>${filtered.length}</strong> / ${DATA.items.length} 條高頻表達</span>
+    <span>目前遮罩：<strong>${maskLabels[state.maskMode] || ''}</strong></span>
+  `;
+
+  const container = document.getElementById('itemsContainer');
+  if (!filtered.length) {
+    container.innerHTML = `<div class="panel" style="text-align:center;padding:40px;">找不到符合條件的表達${q ? `（關鍵字：「${escHtml(q)}」）` : ''}，請調整篩選或取消「只看未勾選」！</div>`;
+    return;
+  }
+  container.innerHTML = filtered.map(it => renderItemRow(it, false)).join('');
+}
+
+/* Custom Inline SVG Artwork Backdrops + Dynamic Hotspot Overlays for Tab 2 */
+function buildSceneBackdropSvg(sceneId, color) {
+  if (sceneId === 'office') {
+    return `
+      <!-- Reception & Files (Top Left) -->
+      <rect x="28" y="24" width="200" height="142" rx="12" fill="#172554" opacity="0.55" stroke="#3b82f6" stroke-dasharray="5 4"/>
+      <rect x="50" y="54" width="70" height="36" rx="6" fill="#1e40af" opacity="0.55"/>
+      <rect x="135" y="42" width="42" height="54" rx="4" fill="#1e3a8a" stroke="#60a5fa"/>
+      <line x1="143" y1="56" x2="169" y2="56" stroke="#93c5fd" stroke-width="2"/>
+      <line x1="143" y1="68" x2="169" y2="68" stroke="#93c5fd" stroke-width="2"/>
+      <!-- Kanban Whiteboard (Top Center) -->
+      <rect x="242" y="24" width="210" height="118" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+      <rect x="262" y="38" width="48" height="22" rx="4" fill="#0284c7" opacity="0.6"/>
+      <rect x="322" y="38" width="48" height="22" rx="4" fill="#f59e0b" opacity="0.6"/>
+      <rect x="382" y="38" width="48" height="22" rx="4" fill="#10b981" opacity="0.6"/>
+      <!-- Meeting Round Table (Top Right) -->
+      <rect x="466" y="24" width="188" height="172" rx="12" fill="#0f766e" opacity="0.22" stroke="#2dd4bf" stroke-dasharray="5 4"/>
+      <ellipse cx="560" cy="110" rx="56" ry="34" fill="#115e59" opacity="0.55" stroke="#5eead4"/>
+      <circle cx="515" cy="76" r="9" fill="#2dd4bf" opacity="0.45"/>
+      <circle cx="605" cy="76" r="9" fill="#2dd4bf" opacity="0.45"/>
+      <circle cx="560" cy="152" r="9" fill="#2dd4bf" opacity="0.45"/>
+      <!-- Phone Booth (Bottom Left) -->
+      <rect x="28" y="206" width="286" height="148" rx="12" fill="#581c87" opacity="0.25" stroke="#c084fc"/>
+      <path d="M74 252 q14 -16 28 0 l6 12 q-16 14 -38 0 z" fill="#c084fc" opacity="0.45"/>
+      <!-- IT & Marketing Desk (Bottom Right) -->
+      <rect x="330" y="206" width="324" height="148" rx="12" fill="#1e3a8a" opacity="0.32" stroke="#60a5fa"/>
+      <rect x="364" y="240" width="66" height="44" rx="5" fill="#0f172a" stroke="#38bdf8"/>
+      <rect x="386" y="286" width="22" height="8" fill="#38bdf8" opacity="0.7"/>
+      <path d="M228 96 L242 96 M452 96 L466 96 M170 166 L170 206 M490 196 L490 206" stroke="${color}" stroke-opacity="0.45" stroke-width="2" stroke-dasharray="4 4"/>
+    `;
+  }
+  if (sceneId === 'hr') {
+    return `
+      <!-- Interview Suite -->
+      <rect x="28" y="24" width="218" height="156" rx="12" fill="#4c1d95" opacity="0.28" stroke="#a78bfa"/>
+      <rect x="64" y="54" width="54" height="70" rx="5" fill="#2e1065" stroke="#c4b5fd"/>
+      <line x1="74" y1="72" x2="108" y2="72" stroke="#ddd6fe" stroke-width="2"/>
+      <line x1="74" y1="86" x2="108" y2="86" stroke="#ddd6fe" stroke-width="2"/>
+      <!-- Promotion / Award Board -->
+      <rect x="260" y="24" width="214" height="156" rx="12" fill="#701a75" opacity="0.24" stroke="#f472b6"/>
+      <polygon points="367,44 374,60 392,62 378,74 382,91 367,82 352,91 356,74 342,62 360,60" fill="#fbbf24" opacity="0.5"/>
+      <!-- Relocation & Onboarding -->
+      <rect x="488" y="24" width="164" height="196" rx="12" fill="#0f766e" opacity="0.24" stroke="#2dd4bf"/>
+      <rect x="524" y="64" width="54" height="44" rx="4" fill="#115e59" stroke="#5eead4"/>
+      <rect x="556" y="88" width="44" height="36" rx="4" fill="#0d9488" opacity="0.6" stroke="#99f6e4"/>
+      <!-- Shift Roster & Clock -->
+      <rect x="28" y="198" width="446" height="156" rx="12" fill="#1e293b" stroke="#8b5cf6" stroke-dasharray="6 4"/>
+      <circle cx="96" cy="276" r="32" fill="#0f172a" stroke="#a78bfa" stroke-width="2"/>
+      <line x1="96" y1="276" x2="96" y2="256" stroke="#e9d5ff" stroke-width="2.5"/>
+      <line x1="96" y1="276" x2="112" y2="282" stroke="#f472b6" stroke-width="2"/>
+      <path d="M246 102 L260 102 M474 102 L488 102 M250 180 L250 198" stroke="${color}" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="4 4"/>
+    `;
+  }
+  if (sceneId === 'sales') {
+    return `
+      <!-- Product Demo & Showcase -->
+      <rect x="26" y="24" width="204" height="152" rx="12" fill="#064e3b" opacity="0.34" stroke="#34d399"/>
+      <rect x="54" y="48" width="84" height="52" rx="6" fill="#0f172a" stroke="#6ee7b7"/>
+      <circle cx="174" cy="74" r="22" fill="#059669" opacity="0.35" stroke="#a7f3d0"/>
+      <!-- Promo & Subscription -->
+      <rect x="244" y="24" width="212" height="132" rx="12" fill="#831843" opacity="0.26" stroke="#f472b6"/>
+      <polygon points="274,44 338,44 352,62 338,80 274,80" fill="#ec4899" opacity="0.4"/>
+      <!-- Quote Desk -->
+      <rect x="470" y="24" width="184" height="168" rx="12" fill="#1e3a8a" opacity="0.3" stroke="#60a5fa"/>
+      <rect x="506" y="50" width="60" height="72" rx="5" fill="#0f172a" stroke="#93c5fd"/>
+      <line x1="516" y1="70" x2="556" y2="70" stroke="#60a5fa" stroke-width="2"/>
+      <line x1="516" y1="86" x2="556" y2="86" stroke="#60a5fa" stroke-width="2"/>
+      <!-- Billing POS -->
+      <rect x="26" y="198" width="308" height="156" rx="12" fill="#78350f" opacity="0.28" stroke="#fbbf24"/>
+      <rect x="58" y="232" width="76" height="48" rx="6" fill="#0f172a" stroke="#fcd34d"/>
+      <!-- Refund & After-sales -->
+      <rect x="350" y="198" width="304" height="156" rx="12" fill="#0f766e" opacity="0.26" stroke="#2dd4bf"/>
+      <path d="M580 248 a24 24 0 1 1 -16 -22" fill="none" stroke="#5eead4" stroke-width="3"/>
+      <polygon points="564,218 574,228 558,233" fill="#5eead4"/>
+    `;
+  }
+  if (sceneId === 'travel') {
+    return `
+      <!-- Hotel & Flight Counter -->
+      <rect x="28" y="24" width="222" height="156" rx="12" fill="#0c4a6e" opacity="0.38" stroke="#38bdf8"/>
+      <path d="M56 76 L98 62 L84 88 L112 96 L72 104 L62 122 L54 100 Z" fill="#7dd3fc" opacity="0.45"/>
+      <!-- City Road & EV -->
+      <rect x="264" y="24" width="218" height="156" rx="12" fill="#1e293b" stroke="#60a5fa"/>
+      <path d="M282 142 Q374 96 462 142" fill="none" stroke="#94a3b8" stroke-width="10" stroke-linecap="round"/>
+      <path d="M282 142 Q374 96 462 142" fill="none" stroke="#fbbf24" stroke-width="2" stroke-dasharray="10 8"/>
+      <!-- Train Platform -->
+      <rect x="496" y="24" width="156" height="224" rx="12" fill="#312e81" opacity="0.35" stroke="#818cf8"/>
+      <rect x="524" y="64" width="96" height="52" rx="8" fill="#1e1b4b" stroke="#a5b4fc"/>
+      <line x1="518" y1="138" x2="630" y2="138" stroke="#818cf8" stroke-width="3"/>
+      <!-- Walking Gallery Map -->
+      <rect x="28" y="198" width="454" height="156" rx="12" fill="#064e3b" opacity="0.28" stroke="#34d399"/>
+      <path d="M74 282 C140 232, 240 318, 336 254 S430 296, 456 264" fill="none" stroke="#34d399" stroke-width="3" stroke-dasharray="6 5"/>
+      <circle cx="74" cy="282" r="7" fill="#fbbf24"/>
+      <circle cx="336" cy="254" r="7" fill="#f472b6"/>
+    `;
+  }
+  if (sceneId === 'dining') {
+    return `
+      <!-- VIP Banquet & Catering -->
+      <rect x="28" y="26" width="256" height="184" rx="12" fill="#78350f" opacity="0.32" stroke="#f59e0b"/>
+      <circle cx="156" cy="116" r="52" fill="#451a03" opacity="0.5" stroke="#fbbf24"/>
+      <circle cx="156" cy="116" r="24" fill="#92400e" opacity="0.45"/>
+      <!-- Chef Kitchen & Cake Display -->
+      <rect x="298" y="26" width="354" height="162" rx="12" fill="#831843" opacity="0.24" stroke="#f472b6"/>
+      <rect x="520" y="54" width="98" height="72" rx="8" fill="#1e293b" stroke="#f9a8d4"/>
+      <path d="M542 108 L596 108 L590 86 L548 86 Z" fill="#f472b6" opacity="0.5"/>
+      <!-- Lobby Hours & Vending Machine -->
+      <rect x="298" y="204" width="354" height="150" rx="12" fill="#1e293b" stroke="#38bdf8"/>
+      <rect x="556" y="224" width="66" height="108" rx="6" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
+      <rect x="568" y="238" width="42" height="44" rx="3" fill="#1d4ed8" opacity="0.35"/>
+      <rect x="330" y="236" width="110" height="58" rx="6" fill="#0f172a" stroke="#fbbf24"/>
+    `;
+  }
+  // health
+  return `
+    <!-- Clinic & Pharmacy -->
+    <rect x="28" y="26" width="276" height="172" rx="12" fill="#7f1d1d" opacity="0.3" stroke="#f87171"/>
+    <rect x="58" y="54" width="40" height="40" rx="8" fill="#dc2626" opacity="0.45"/>
+    <rect x="74" y="61" width="8" height="26" fill="#fee2e2"/>
+    <rect x="65" y="70" width="26" height="8" fill="#fee2e2"/>
+    <!-- Research Lab & Library -->
+    <rect x="320" y="26" width="332" height="172" rx="12" fill="#1e3a8a" opacity="0.3" stroke="#60a5fa"/>
+    <circle cx="574" cy="84" r="26" fill="#0f172a" stroke="#93c5fd" stroke-width="2"/>
+    <line x1="574" y1="58" x2="574" y2="110" stroke="#60a5fa" stroke-width="1.5"/>
+    <line x1="548" y1="84" x2="600" y2="84" stroke="#60a5fa" stroke-width="1.5"/>
+    <!-- Accessibility & Maintenance -->
+    <rect x="28" y="212" width="624" height="142" rx="12" fill="#064e3b" opacity="0.28" stroke="#34d399"/>
+    <path d="M62 326 L168 326 L168 294 Z" fill="#10b981" opacity="0.35" stroke="#6ee7b7"/>
+    <path d="M518 250 H592 V298 H624" fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  `;
+}
+
+function renderSceneSvg(sc, activeHsId) {
+  const hotspotsSvg = sc.hotspots.map(hs => {
+    const cx = Math.round((hs.x / 100) * 680);
+    const cy = Math.round((hs.y / 100) * 380);
+    const w = 172;
+    const h = 62;
+    const rx = Math.max(12, Math.min(680 - w - 12, cx - w / 2));
+    const ry = Math.max(12, Math.min(380 - h - 12, cy - h / 2));
+    const isSel = activeHsId === hs.id;
+    const labelShort = hs.label.length > 12 ? hs.label.slice(0, 12) + '…' : hs.label;
+    return `
+      <g class="hotspot-node" onclick="selectHotspot('${sc.id}', '${hs.id}')">
+        <rect x="${rx}" y="${ry}" width="${w}" height="${h}" rx="11"
+              fill="${isSel ? '#be185d' : '#0f172a'}" fill-opacity="${isSel ? '0.92' : '0.86'}"
+              stroke="${isSel ? '#f472b6' : sc.color}" stroke-width="${isSel ? '2.5' : '1.6'}"/>
+        <text x="${rx + w / 2}" y="${ry + 25}" fill="#f8fafc" font-size="13" font-weight="bold" text-anchor="middle">${escHtml(hs.icon + ' ' + labelShort)}</text>
+        <text x="${rx + w / 2}" y="${ry + 46}" fill="${isSel ? '#fde047' : '#94a3b8'}" font-size="11.5" text-anchor="middle">點擊收聽 ${hs.itemIds.length} 個考點</text>
+      </g>
+    `;
+  }).join('');
+
+  return `
+    <svg viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${escHtml(sc.name)}互動情境圖">
+      <defs>
+        <pattern id="grid-${sc.id}" width="24" height="24" patternUnits="userSpaceOnUse">
+          <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#334155" stroke-width="0.6" stroke-opacity="0.4"/>
+        </pattern>
+      </defs>
+      <rect width="680" height="380" rx="14" fill="#0f172a"/>
+      <rect width="680" height="380" rx="14" fill="url(#grid-${sc.id})"/>
+      <rect x="8" y="8" width="664" height="364" rx="12" fill="none" stroke="${sc.color}" stroke-width="2" stroke-opacity="0.65"/>
+      ${buildSceneBackdropSvg(sc.id, sc.color)}
+      ${hotspotsSvg}
+    </svg>
+  `;
+}
+
+function buildStoryHtml(sc) {
+  const safeStory = escHtml(sc.story);
+  return safeStory.replace(/\[(\d{3})\]/g, (_, id) => {
+    const it = ITEM_MAP[id];
+    if (!it) return `[${id}]`;
+    const activeCls = state.activeItemId === id ? 'active' : '';
+    const knownCls = isKnown(id) ? 'known' : '';
+    const labelText = state.maskMode === 'blind' ? id : `${id} ${escHtml(it.term)}`;
+    return `<button type="button" class="story-chip ${knownCls} ${activeCls}" data-story-id="${id}" title="${escHtml(it.en)} (${escHtml(it.zh)})" onclick="playItem('${id}', true)">▶ ${labelText}</button>`;
+  });
+}
+
+function selectHotspot(sceneId, hotspotId) {
+  const sc = getSceneObj(sceneId);
+  if (state.activeHotspotId === hotspotId) {
+    state.filterByHotspot = !state.filterByHotspot;
+  } else {
+    state.activeHotspotId = hotspotId;
+    state.filterByHotspot = true;
+  }
+  const hs = sc.hotspots.find(h => h.id === hotspotId);
+  if (hs && hs.itemIds.length) {
+    playItem(hs.itemIds[0], true);
+  }
+  renderScenes();
+}
+
+function renderScenes() {
+  document.getElementById('sceneSelectorGrid').innerHTML = DATA.scenes.map(sc => {
+    const knownInScene = sc.itemIds.filter(id => isKnown(id)).length;
+    return `
+      <button class="scene-card-btn ${state.activeScene === sc.id ? 'active' : ''}" onclick="state.activeScene='${sc.id}';state.activeHotspotId=null;state.filterByHotspot=false;renderScenes()">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+          <span style="font-size:1.6rem;">${sc.icon}</span>
+          <span class="scene-tag" style="color:var(--green);">已掌握 ${knownInScene}/${sc.count}</span>
+        </div>
+        <div style="font-weight:800;font-size:0.95rem;">${escHtml(sc.shortName)}・${escHtml(sc.name.split('・')[0])}</div>
+        <div style="font-size:0.77rem;color:var(--muted);margin-top:4px;">收錄 ${sc.count} 條高頻表達</div>
+      </button>
+    `;
+  }).join('');
+
+  const sc = getSceneObj(state.activeScene);
+  const activeHs = sc.hotspots.find(h => h.id === state.activeHotspotId) || sc.hotspots[0];
+  const displayIds = (state.filterByHotspot && activeHs) ? activeHs.itemIds : sc.itemIds;
+  const sceneItems = displayIds.map(id => ITEM_MAP[id]).filter(Boolean);
+
+  document.getElementById('sceneStageArea').innerHTML = `
+    <div class="scene-hero">
+      <div class="svg-stage">
+        <div class="panel-title">
+          <span>🗺️ ${sc.icon} ${escHtml(sc.name)} — 互動情境圖（點擊熱點聽原音）</span>
+        </div>
+        ${renderSceneSvg(sc, activeHs ? activeHs.id : null)}
+        ${activeHs ? `
+          <div class="hotspot-info">
+            <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;">
+              <strong>${activeHs.icon} ${escHtml(activeHs.label)}</strong>
+              <button class="pill-btn ${state.filterByHotspot ? 'active' : ''}" onclick="state.filterByHotspot=!state.filterByHotspot;renderScenes()">
+                ${state.filterByHotspot ? `✓ 僅顯示本熱點 (${activeHs.itemIds.length})` : `篩選此熱點 (${activeHs.itemIds.length})`}
+              </button>
+            </div>
+            <p style="margin:5px 0 8px;font-size:0.83rem;color:var(--muted);">${escHtml(activeHs.desc)}</p>
+            <div class="controls-group">
+              ${activeHs.itemIds.map(id => {
+                const it = ITEM_MAP[id];
+                return `<button class="story-chip ${state.activeItemId === id ? 'active' : ''}" onclick="playItem('${id}', true)">▶ ${id} ${it ? escHtml(it.term) : ''}</button>`;
+              }).join('')}
+            </div>
+          </div>
+        ` : ''}
+      </div>
+
+      <div class="story-box">
+        <div class="panel-title">
+          <span>📖 情境串聯記憶故事（點擊藍色晶片立即發音）</span>
+        </div>
+        <p style="font-size:0.84rem;color:var(--muted);margin-top:0;">${escHtml(sc.subtitle)}</p>
+        <div class="story-paragraph">${buildStoryHtml(sc)}</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">
+        <span>🎯 ${sc.icon} ${state.filterByHotspot && activeHs ? `熱點「${escHtml(activeHs.label)}」關聯句型` : '本情境全部實戰句庫'}（共 ${sceneItems.length} 條）</span>
+        ${state.filterByHotspot ? `<button class="pill-btn" onclick="state.filterByHotspot=false;renderScenes()">顯示全部 (${sc.itemIds.length})</button>` : ''}
+      </div>
+      <div class="items-list">${sceneItems.map(it => renderItemRow(it, true)).join('')}</div>
+    </div>
+  `;
+}
+
+/* Tab 3: Comparisons */
+function setCompFilter(ctype) {
+  state.compFilter = ctype;
+  document.querySelectorAll('[data-ctype]').forEach(b => b.classList.toggle('active', b.dataset.ctype === ctype));
+  renderComparisons();
+}
+
+function playComparisonSequence(compId) {
+  const c = DATA.comparisons.find(x => x.id === compId);
+  if (!c || !c.entries.length) return;
+  state.sequenceQueue = c.entries.slice(1).map(e => e.itemId);
+  playItem(c.entries[0].itemId, true, true);
+}
+
+function renderComparisons() {
+  const list = DATA.comparisons.filter(c => state.compFilter === 'all' || c.type === state.compFilter);
+  const badgeClass = t => t === 'polysemy' ? 'high' : (t === 'antonym_collocation' ? 'amber' : 'blue');
+
+  document.getElementById('compCardsGrid').innerHTML = list.map(c => `
+    <article class="comp-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;">
+        <span class="rate-badge ${badgeClass(c.type)}">${escHtml(c.badge)}</span>
+        <button class="pill-btn" onclick="playComparisonSequence('${c.id}')">▶ 連播本組 (${c.entries.length}句)</button>
+      </div>
+      <h3 style="margin:2px 0 0;font-size:1.03rem;">${escHtml(c.title)}</h3>
+      <p style="margin:0;font-size:0.84rem;color:var(--muted);">${escHtml(c.summary)}</p>
+
+      <div class="comp-entries-grid">
+        ${c.entries.map(e => {
+          const sc = getSceneObj(e.scene);
+          return `
+            <div class="comp-entry-box">
+              <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;">
+                <span style="font-weight:800;color:var(--pink);font-size:0.9rem;">
+                  <span style="font-family:Consolas,monospace;font-size:0.78rem;color:var(--muted);">#${e.itemId}</span>
+                  ${escHtml(e.term)}
+                </span>
+                <button class="time-chip" onclick="playItem('${e.itemId}', true)">▶ ${fmtTime(e.start)}</button>
+              </div>
+              <div style="font-size:0.82rem;font-weight:700;color:var(--blue);">${sc.icon} ${escHtml(e.meaning)}</div>
+              <div style="font-size:0.9rem;font-weight:600;">${formatEnMarkdown(e.enMarkdown || e.en, false)}</div>
+              <div style="font-size:0.82rem;color:var(--muted);">${escHtml(e.zh)}</div>
+              <div style="font-size:0.78rem;color:var(--green);margin-top:2px;">🎯 ${escHtml(e.examCue)}</div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    </article>
+  `).join('');
+
+  document.getElementById('compSummaryTable').innerHTML = `
+    <thead>
+      <tr><th>類別</th><th>核心對照組</th><th>多益必考換字／判斷點</th><th>快速試聽</th></tr>
+    </thead>
+    <tbody>
+      ${DATA.comparisons.map(c => `
+        <tr>
+          <td><span class="rate-badge ${badgeClass(c.type)}">${escHtml(c.badge)}</span></td>
+          <td><strong>${escHtml(c.title)}</strong></td>
+          <td style="color:var(--muted);">${escHtml(c.summary)}</td>
+          <td>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;">
+              ${c.entries.map(e => `<button class="time-chip" onclick="playItem('${e.itemId}', true)">▶ ${e.itemId}</button>`).join('')}
+            </div>
+          </td>
+        </tr>
+      `).join('')}
+    </tbody>
+  `;
+}
+
+/* Tab 4: Quiz */
+function setQuizMode(m) {
+  state.quizMode = m;
+  document.getElementById('qModeMeaning').classList.toggle('active', m === 'meaning');
+  document.getElementById('qModeKw').classList.toggle('active', m === 'keyword');
+  nextQuizQuestion();
+}
+
+function setQuizPool(pool) {
+  state.quizPool = pool;
+  document.getElementById('qPoolAll').classList.toggle('active', pool === 'all');
+  document.getElementById('qPoolUnchecked').classList.toggle('active', pool === 'unchecked');
+  document.getElementById('qPoolMissed').classList.toggle('active', pool === 'missed');
+  nextQuizQuestion();
+}
+
+function updateQuizCounts() {
+  const unCount = DATA.items.length - state.known.length;
+  const mCount = state.missedQuizIds.length;
+  document.getElementById('quizUncheckedCount').textContent = unCount;
+  document.getElementById('quizMissedCount').textContent = mCount;
+  document.getElementById('qPoolMissed').disabled = mCount === 0;
+  if (state.quizPool === 'missed' && mCount === 0) {
+    state.quizPool = 'all';
+    document.getElementById('qPoolAll').classList.add('active');
+    document.getElementById('qPoolMissed').classList.remove('active');
+  }
+}
+
+function nextQuizQuestion() {
+  let candidatePool = DATA.items;
+  let notice = '';
+
+  if (state.quizPool === 'unchecked') {
+    const un = DATA.items.filter(it => !isKnown(it.id));
+    if (un.length > 0) candidatePool = un;
+    else notice = '🎉 太棒了！114 條已全部勾選掌握，目前自動切換為全題庫隨機抽題。';
+  } else if (state.quizPool === 'missed') {
+    const ms = state.missedQuizIds.map(id => ITEM_MAP[id]).filter(Boolean);
+    if (ms.length > 0) candidatePool = ms;
+  }
+
+  const prevId = state.currentQuiz && state.currentQuiz.target ? state.currentQuiz.target.id : null;
+  let pickPool = candidatePool.length > 1 ? candidatePool.filter(it => it.id !== prevId) : candidatePool;
+  const target = pickPool[Math.floor(Math.random() * pickPool.length)];
+
+  const distractors = [];
+  const allItems = DATA.items;
+  while (distractors.length < 3) {
+    const cand = allItems[Math.floor(Math.random() * allItems.length)];
+    if (cand.id !== target.id && cand.term !== target.term && !distractors.some(d => d.id === cand.id)) {
+      distractors.push(cand);
+    }
+  }
+  const options = [target, ...distractors].sort(() => Math.random() - 0.5);
+  state.currentQuiz = { target, options, answered: false, notice };
+  renderQuizArena();
+  playItem(target.id, true);
+}
+
+function renderQuizArena() {
+  const q = state.currentQuiz;
+  if (!q) return;
+  const t = q.target;
+  const maskedSentence = (t.enSegments && t.enSegments.length)
+    ? t.enSegments.map(s => s.bold ? '<span class="kw">[ ______ ]</span>' : escHtml(s.text)).join('')
+    : escHtml(t.en);
+
+  document.getElementById('quizArena').innerHTML = `
+    ${q.notice ? `<div class="tip-line" style="margin-bottom:12px;">${q.notice}</div>` : ''}
+    <div style="background:var(--card-2);border:1px solid var(--border);border-radius:14px;padding:18px;text-align:center;">
+      <div style="font-size:2.1rem;margin-bottom:6px;">${state.quizMode === 'meaning' ? '🎧❓' : getSceneObj(t.sceneId).icon}</div>
+      <div style="font-size:1.08rem;font-weight:800;margin-bottom:8px;">
+        ${state.quizMode === 'meaning'
+          ? `請聽 #${t.id} 音檔片段，選出最精確的中文語意！`
+          : maskedSentence}
+      </div>
+      ${state.quizMode === 'keyword'
+        ? `<div style="font-size:0.88rem;color:var(--muted);margin-bottom:10px;">中文語意：${escHtml(t.zh)}</div>`
+        : ''}
+      <button class="play-main" onclick="playItem('${t.id}', true)">🔊 重播本題片段 (${t.timeLabel})</button>
+    </div>
+
+    <div class="quiz-options">
+      ${q.options.map((opt, idx) => `
+        <button class="quiz-opt" id="qopt-${idx}" onclick="answerQuiz(${idx})">
+          ${state.quizMode === 'meaning'
+            ? `<div style="font-weight:800;font-size:0.96rem;color:var(--text);">${escHtml(opt.zh)}</div>
+               <div style="font-size:0.78rem;color:var(--blue);margin-top:4px;">${getSceneObj(opt.sceneId).icon} 核心詞義：${escHtml(opt.meaning)}</div>`
+            : `<div style="font-weight:800;font-size:1.05rem;color:var(--pink);">${escHtml(opt.highlight || opt.term)}</div>
+               <div style="font-size:0.78rem;color:var(--muted);margin-top:3px;">(${escHtml(opt.term)} — ${escHtml(opt.meaning)})</div>`
+          }
+        </button>
+      `).join('')}
+    </div>
+    <div id="quizFeedback" style="margin-top:14px;"></div>
+  `;
+}
+
+function answerQuiz(idx) {
+  const q = state.currentQuiz;
+  if (!q || q.answered) return;
+  q.answered = true;
+  state.quizTotal++;
+  const chosen = q.options[idx];
+  const ok = chosen.id === q.target.id;
+
+  if (ok) {
+    state.quizScore++;
+    state.quizStreak++;
+    if (state.quizStreak > state.quizBestStreak) state.quizBestStreak = state.quizStreak;
+    state.missedQuizIds = state.missedQuizIds.filter(id => id !== q.target.id);
+  } else {
+    state.quizStreak = 0;
+    if (!state.missedQuizIds.includes(q.target.id)) state.missedQuizIds.push(q.target.id);
+  }
+
+  q.options.forEach((opt, i) => {
+    const btn = document.getElementById('qopt-' + i);
+    if (opt.id === q.target.id) btn.classList.add('correct');
+    else if (i === idx && !ok) btn.classList.add('wrong');
+  });
+
+  document.getElementById('quizScoreBadge').textContent = `得分 ${state.quizScore} / ${state.quizTotal}`;
+  document.getElementById('quizStreakBadge').textContent = `🔥 連勝 ${state.quizStreak}（最佳 ${state.quizBestStreak}）`;
+  updateQuizCounts();
+  renderMissedQuizList();
+
+  const knownNow = isKnown(q.target.id);
+  document.getElementById('quizFeedback').innerHTML = `
+    <div class="rule-box" style="border-left-color:${ok ? 'var(--green)' : 'var(--red)'};">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;">
+        <strong>${ok ? '✅ 答對了！' : '❌ 答錯囉，再聽一次把關鍵詞記起來！'}</strong>
+        <div class="controls-group">
+          <button class="pill-btn ${knownNow ? 'active' : ''}" onclick="toggleKnown('${q.target.id}');this.classList.toggle('active',isKnown('${q.target.id}'));this.textContent=isKnown('${q.target.id}')?'☑️ 已掌握':'⬜ 標記已掌握'">
+            ${knownNow ? '☑️ 已掌握' : '⬜ 標記已掌握'}
+          </button>
+          <button class="pill-btn active" onclick="nextQuizQuestion()">下一題 ➡</button>
+        </div>
+      </div>
+      <div style="margin-top:6px;font-weight:700;">#${q.target.id} [${escHtml(q.target.term)}] ${renderEnFromSegments(q.target, false)}</div>
+      <div style="color:var(--muted);font-size:0.88rem;margin-top:2px;">${escHtml(q.target.zh)}（${escHtml(q.target.meaning)}）</div>
+      ${q.target.note ? `<div class="note-line" style="margin-top:6px;">📝 ${escHtml(q.target.note)}</div>` : ''}
+      ${q.target.memoryTip ? `<div class="tip-line" style="margin-top:6px;">💡 ${escHtml(q.target.memoryTip)}</div>` : ''}
+    </div>
+  `;
+}
+
+function clearMissedQuiz() {
+  state.missedQuizIds = [];
+  updateQuizCounts();
+  renderMissedQuizList();
+}
+
+function renderMissedQuizList() {
+  const el = document.getElementById('missedQuizContainer');
+  if (!state.missedQuizIds.length) {
+    el.innerHTML = `<p style="color:var(--muted);font-size:0.86rem;margin:0;">目前沒有答錯紀錄！答錯的題目會自動收集在這裡方便反覆重練。</p>`;
+    return;
+  }
+  const items = state.missedQuizIds.map(id => ITEM_MAP[id]).filter(Boolean);
+  el.innerHTML = `<div class="items-list">${items.map(it => renderItemRow(it, true)).join('')}</div>`;
+}
+
+function renderBookmarks() {
+  const bc = document.getElementById('bookmarksContainer');
+  if (!state.bookmarks.length) {
+    bc.innerHTML = `<p style="color:var(--muted);font-size:0.86rem;margin:0;">尚未標記任何難點。在逐條清單點擊 📌 即可收藏高難度或易混淆句子！</p>`;
+    return;
+  }
+  const items = state.bookmarks.map(id => ITEM_MAP[id]).filter(Boolean);
+  bc.innerHTML = `<div class="items-list">${items.map(it => renderItemRow(it, true)).join('')}</div>`;
+}
+
+/* Audio Engine */
+function safePlay() {
+  const p = audio.play();
+  if (p && typeof p.catch === 'function') p.catch(() => {});
+}
+
+function playItem(itemId, stopAtEnd = false, keepQueue = false) {
+  const it = ITEM_MAP[itemId];
+  if (!it) return;
+  if (!keepQueue) state.sequenceQueue = [];
+  state.loopRange = null;
+  state.stopAtEnd = stopAtEnd ? { end: it.end, id: it.id } : null;
+  updateLoopBtn();
+  audio.currentTime = it.start;
+  safePlay();
+  setActiveItem(it);
+}
+
+function toggleLoopItem(itemId) {
+  state.sequenceQueue = [];
+  state.stopAtEnd = null;
+  if (state.loopRange && state.loopRange.id === itemId) {
+    state.loopRange = null;
+  } else {
+    const it = ITEM_MAP[itemId];
+    if (!it) return;
+    state.loopRange = { start: it.start, end: it.end, id: it.id };
+    audio.currentTime = it.start;
+    safePlay();
+    setActiveItem(it);
+  }
+  updateLoopBtn();
+  renderItems();
+  if (state.tab === 'scenes') renderScenes();
+}
+
+function toggleLoopCurrent() {
+  state.sequenceQueue = [];
+  state.stopAtEnd = null;
+  if (state.loopRange) {
+    state.loopRange = null;
+  } else {
+    const it = ITEM_MAP[state.activeItemId] || DATA.items[0];
+    if (it) state.loopRange = { start: it.start, end: it.end, id: it.id };
+  }
+  updateLoopBtn();
+  renderItems();
+}
+
+function updateLoopBtn() {
+  const btn = document.getElementById('loopBtn');
+  btn.textContent = state.loopRange ? '🔁 循環中：開' : '🔁 單條循環：關';
+  btn.classList.toggle('active', !!state.loopRange);
+}
+
+function toggleAutoScroll() {
+  state.autoScroll = !state.autoScroll;
+  const btn = document.getElementById('autoScrollBtn');
+  btn.textContent = state.autoScroll ? '📜 自動跟隨：開' : '📜 自動跟隨：關';
+  btn.classList.toggle('active', state.autoScroll);
+}
+
+function togglePlay() {
+  if (audio.paused) {
+    state.stopAtEnd = null;
+    safePlay();
+  } else {
+    audio.pause();
+  }
+}
+
+function setSpeed(spd) {
+  audio.playbackRate = spd;
+  document.querySelectorAll('[data-speed]').forEach(b => b.classList.toggle('active', parseFloat(b.dataset.speed) === spd));
+}
+
+function onSeek(val) {
+  state.stopAtEnd = null;
+  state.sequenceQueue = [];
+  audio.currentTime = parseFloat(val);
+}
+
+function stepItem(delta) {
+  const idx = DATA.items.findIndex(t => t.id === state.activeItemId);
+  const nextIdx = Math.max(0, Math.min(DATA.items.length - 1, (idx === -1 ? 0 : idx) + delta));
+  playItem(DATA.items[nextIdx].id, false);
+}
+
+function setActiveItem(it) {
+  if (!it || state.activeItemId === it.id) return;
+  state.activeItemId = it.id;
+
+  const sc = getSceneObj(it.sceneId);
+  document.getElementById('liveEmoji').textContent = sc.icon || '🎙️';
+  document.getElementById('liveEn').innerHTML = `<span style="color:var(--pink);">[${escHtml(it.term)}]</span> ${renderEnFromSegments(it, false)}`;
+  document.getElementById('liveZh').textContent = `${it.meaning} — ${it.zh}`;
+  document.getElementById('livePointBadge').textContent = `${it.id}・${it.page.toUpperCase()}`;
+
+  document.querySelectorAll('.expr-card.active-item').forEach(el => el.classList.remove('active-item'));
+  const row = document.getElementById('row-' + it.id);
+  if (row) {
+    row.classList.add('active-item');
+    if (state.autoScroll && state.tab === 'sync') {
+      row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+
+  document.querySelectorAll('.jump-btn.active').forEach(el => el.classList.remove('active'));
+  const jb = document.getElementById('jump-' + it.id);
+  if (jb) jb.classList.add('active');
+
+  document.querySelectorAll('.story-chip.active').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll(`.story-chip[data-story-id="${it.id}"]`).forEach(el => el.classList.add('active'));
+
+  if (it.page) selectBookPage(it.page);
+}
+
+audio.addEventListener('play', () => { document.getElementById('playPauseBtn').textContent = '⏸ 暫停'; });
+audio.addEventListener('pause', () => { document.getElementById('playPauseBtn').textContent = '▶ 播放'; });
+audio.addEventListener('timeupdate', () => {
+  const t = audio.currentTime;
+  document.getElementById('currTimeText').textContent = fmtTime(t);
+  document.getElementById('seekSlider').value = t;
+
+  if (state.loopRange && t >= state.loopRange.end - 0.05) {
+    audio.currentTime = state.loopRange.start;
+    return;
+  }
+
+  if (state.stopAtEnd && t >= state.stopAtEnd.end - 0.05) {
+    if (state.sequenceQueue.length > 0) {
+      const nextId = state.sequenceQueue.shift();
+      playItem(nextId, true, true);
+      return;
+    }
+    state.stopAtEnd = null;
+    audio.pause();
+    return;
+  }
+
+  const matched = DATA.items.find(it => t >= it.start && t < it.end) || (t >= DATA.meta.totalDuration ? DATA.items[DATA.items.length - 1] : null);
+  if (matched) setActiveItem(matched);
+});
+
+audio.addEventListener('loadedmetadata', () => {
+  const dur = audio.duration || DATA.meta.totalDuration || 947.68;
+  document.getElementById('seekSlider').max = dur;
+  document.getElementById('durTimeText').textContent = fmtTime(dur);
+});
+
+document.addEventListener('keydown', (e) => {
+  if (!document.getElementById('secretGate').classList.contains('hidden')) return;
+  if (e.key === 'Escape' && document.getElementById('lightbox').classList.contains('open')) {
+    closeLightbox();
+    return;
+  }
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+  if (e.code === 'Space') { e.preventDefault(); togglePlay(); }
+  else if (e.code === 'ArrowLeft') { e.preventDefault(); stepItem(-1); }
+  else if (e.code === 'ArrowRight') { e.preventDefault(); stepItem(1); }
+  else if (e.key.toLowerCase() === 'l') { toggleLoopCurrent(); }
+  else if (e.key.toLowerCase() === 'r') {
+    const it = ITEM_MAP[state.activeItemId] || DATA.items[0];
+    if (it) playItem(it.id, false);
+  }
+});
+
+/* Secret Link Gate */
+const SECRET_PASS = 'toeic990';
+const SECRET_STORAGE_KEY = 'toeic_p34_secret_unlocked';
+
+function initSecretGate() {
+  if (location.protocol === 'file:') return;
+  const params = new URLSearchParams(location.search);
+  if (params.get('key') === SECRET_PASS) {
+    safeStorageSet(localStorage, SECRET_STORAGE_KEY, SECRET_PASS);
+    safeStorageSet(sessionStorage, SECRET_STORAGE_KEY, SECRET_PASS);
+    return;
+  }
+  if (
+    safeStorageGet(sessionStorage, SECRET_STORAGE_KEY, '') === SECRET_PASS ||
+    safeStorageGet(localStorage, SECRET_STORAGE_KEY, '') === SECRET_PASS
+  ) {
+    return;
+  }
+  document.getElementById('secretGate').classList.remove('hidden');
+}
+
+function submitSecretKey() {
+  const val = document.getElementById('secretInput').value.trim();
+  if (val === SECRET_PASS) {
+    safeStorageSet(localStorage, SECRET_STORAGE_KEY, SECRET_PASS);
+    safeStorageSet(sessionStorage, SECRET_STORAGE_KEY, SECRET_PASS);
+    document.getElementById('secretGate').classList.add('hidden');
+    document.getElementById('secretErr').textContent = '';
+  } else {
+    document.getElementById('secretErr').textContent = '通行碼錯誤，請向分享者索取私密連結或通行碼。';
+  }
+}
+
+function copyShareLink() {
+  const baseUrl = location.protocol === 'file:'
+    ? 'https://wenny0419.github.io/toeic-part34-study/'
+    : `${location.origin}${location.pathname}`;
+  const shareUrl = `${baseUrl}?key=${SECRET_PASS}`;
+  const btn = document.getElementById('shareBtn');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(shareUrl).then(() => {
+      btn.textContent = '✅ 已複製私密網址';
+      setTimeout(() => { btn.textContent = '🔗 複製私密網址'; }, 2200);
+    }).catch(() => prompt('請複製以下私密分享網址：', shareUrl));
+  } else {
+    prompt('請複製以下私密分享網址：', shareUrl);
+  }
+}
+
+/* INIT */
+initTheme();
+initSecretGate();
+renderFilterChips();
+renderJumpAndPages();
+renderItems();
+</script>
+</body>
+</html>

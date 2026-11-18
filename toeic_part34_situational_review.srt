@@ -1,0 +1,569 @@
+1
+00:00:00,000 --> 00:00:08,000
+[001] Actually, I'm heading there myself.
+其實，我自己也正要去那裡。  [head: 去，前往…]
+
+2
+00:00:08,000 --> 00:00:15,000
+[002] All you'll have to do is write down your name.
+您只需要寫下您的名字就可以了。  [write down: 寫下]
+
+3
+00:00:15,000 --> 00:00:23,000
+[003] Andy will cover my shift in the kitchen.
+Andy 會代替我在廚房的輪班。  [shift: 輪班，交接班]
+
+4
+00:00:23,000 --> 00:00:31,000
+[004] Are you here to pick up your medication?
+您是來領藥的嗎？  [medication: 藥物]
+
+5
+00:00:31,000 --> 00:00:39,000
+[005] Are you interested in one of our job openings?
+您對我們的某個職缺有興趣嗎？  [job openings: 職缺，就業機會]
+
+6
+00:00:39,000 --> 00:00:47,000
+[006] Can you give me a demonstration of your products?
+可以為我展示一下貴公司的產品嗎？  [demonstration: 示範，演示]
+
+7
+00:00:47,000 --> 00:00:56,000
+[007] Will I be compensated for all my moving costs?
+我的搬家費用會全額補貼嗎？  [moving costs: 搬家費用]
+
+8
+00:00:56,000 --> 00:01:04,000
+[008] Congratulations on your promotion, Alex!
+Alex，恭喜你獲得升遷！  [promotion: 升遷]
+
+9
+00:01:04,000 --> 00:01:12,000
+[009] Could you give me the last four digits of the credit card number?
+可以給我信用卡號碼的最後四位數嗎？  [digits: 數字，位數]
+
+10
+00:01:12,000 --> 00:01:19,000
+[010] Did I cover everything you needed?
+我有把您想知道的都說清楚了嗎？  [cover: 涵蓋，處理]
+
+11
+00:01:19,000 --> 00:01:28,000
+[011] Why don't you tell us what interests you the most about our position?
+您可以告訴我們，我們這個職位中最吸引您的是哪一點嗎？  [interest: 引起關注]
+
+12
+00:01:28,000 --> 00:01:35,000
+[012] Do you know anyone fluent in Mandarin?
+您知道有誰中文講得很流利嗎？  [fluent: 流利的]
+
+13
+00:01:35,000 --> 00:01:44,000
+[013] We rely on customer reviews to help spread the word.
+我們依賴顧客評價來協助宣傳。  [customer reviews: 顧客評價]
+
+14
+00:01:44,000 --> 00:01:52,000
+[014] Do you mind if I work from home?
+我可以在家工作嗎？  [work from home: 在家工作]
+
+15
+00:01:52,000 --> 00:02:00,000
+[015] Excuse me, I think the vending machine is broken.
+不好意思，我想這自動販賣機壞掉了。  [vending machine: 自動販賣機]
+
+16
+00:02:00,000 --> 00:02:09,000
+[016] Great news! I finally got a hold of Mr. Thomas.
+好消息！我終於聯絡上了 Thomas 先生了。  [get a hold of: 聯絡上]
+
+17
+00:02:09,000 --> 00:02:17,000
+[017] I guess I will have to come back another time.
+看來我得改天再來了。  [come back: 回來、再來]
+
+18
+00:02:17,000 --> 00:02:25,000
+[018] He'll be a great addition to our team.
+他會成為我們 team 的絕佳助力。  [team: 團隊]
+
+19
+00:02:25,000 --> 00:02:33,000
+[019] We have quite a wide selection.
+我們提供相當多樣化的選擇。  [selection: 選擇，可供選擇的項目]
+
+20
+00:02:33,000 --> 00:02:39,000
+[020] How does tomorrow sound?
+明天方便嗎？  [tomorrow: 明天]
+
+21
+00:02:39,000 --> 00:02:46,000
+[021] How much do I owe you?
+我欠你多少錢？  [owe: 欠，應付]
+
+22
+00:02:46,000 --> 00:02:54,000
+[022] We have a promotion going on right now.
+現在我們有一場促銷活動正在進行。  [promotion: 促銷活動]
+
+23
+00:02:54,000 --> 00:03:01,000
+[023] I'd be happy to provide you with a quote.
+我很樂意為您提供一份報價。  [quote: 報價]
+
+24
+00:03:01,000 --> 00:03:10,000
+[024] I'd like to book a direct flight to Tokyo for April 5th, please.
+我想預訂 4 月 5 日飛東京的直飛班機，麻煩了。  [book: 預訂]
+
+25
+00:03:10,000 --> 00:03:17,000
+[025] We don't want to keep our clients waiting.
+我們不希望讓客戶久等。  [wait: 等待]
+
+26
+00:03:17,000 --> 00:03:24,000
+[026] I'm flattered.
+您過獎了。  [flattered: 受寵若驚的，被誇讚的]
+
+27
+00:03:24,000 --> 00:03:31,000
+[027] We could use his help.
+我們可能會需要他的幫助。  [help: 幫助]
+
+28
+00:03:31,000 --> 00:03:38,000
+[028] I'm just going to run a few errands.
+我只是要跑幾個小差事。  [errand: 跑腿，差事]
+
+29
+00:03:38,000 --> 00:03:47,000
+[029] I'm looking for the missing film footage of the local rivers.
+我正在尋找遺失的當地河流影像資料。  [missing: 遺失的，消失的]
+
+30
+00:03:47,000 --> 00:03:54,000
+[030] I'm staying here at the hotel on business.
+我因公務暫住在這間飯店。  [stay: 停留，住宿]
+
+31
+00:03:54,000 --> 00:04:03,000
+[031] We can't let ourselves fall behind schedule.
+我們不能讓進度落後。  [fall behind: 落後，延遲]
+
+32
+00:04:03,000 --> 00:04:10,000
+[032] I'm trying to locate an article.
+我正在找一篇文章。  [locate: 找出，找到]
+
+33
+00:04:10,000 --> 00:04:18,000
+[033] I appreciate you meeting with me today.
+我很感謝您今天能與我見面。  [appreciate: 感謝]
+
+34
+00:04:18,000 --> 00:04:26,000
+[034] How much money have we collected in fines for overdue books?
+我們因逾期還書收了多少罰金？  [collect: 收取]
+
+35
+00:04:26,000 --> 00:04:35,000
+[035] I'd recommend consulting with our web designer.
+我建議您諮詢一下我們的網頁設計師。  [recommend: 推薦]
+
+36
+00:04:35,000 --> 00:04:43,000
+[036] I'll have to get the cost approved first.
+我得先取得費用的批准。  [approve: 批准]
+
+37
+00:04:43,000 --> 00:04:53,000
+[037] I'm having trouble getting hold of last month's sales figures for our new line of menswear.
+我在取得我們上個月新男裝系列的銷售數據方面遇到困難。  [trouble: 麻煩，困難]
+
+38
+00:04:53,000 --> 00:05:01,000
+[038] I'm not authorized to give refunds.
+我沒有權限辦理退款。  [authorize: 授權，批准]
+
+39
+00:05:01,000 --> 00:05:09,000
+[039] I guess I'll check the theater's website to see if the show is still on.
+我想我會上劇院網站確認一下，看那場表演是否還有在演。  [check: 確認]
+
+40
+00:05:09,000 --> 00:05:18,000
+[040] I think I'd rather just return it and get my money back.
+我想我寧可退貨拿回錢好了。  [return: 退還]
+
+41
+00:05:18,000 --> 00:05:26,000
+[041] It looks like we are going to be on schedule.
+看起來我們會依照行程進度順利進行。  [schedule: 行程，進度]
+
+42
+00:05:26,000 --> 00:05:33,000
+[042] That makes sense.
+那就說得通了。  [make sense: 有道理，說得通]
+
+43
+00:05:33,000 --> 00:05:42,000
+[043] We have a private dining area that seats up to 30 people.
+我們有一個最多可容納 30 人的私人用餐區。  [private dining area: 私人用餐區]
+
+44
+00:05:42,000 --> 00:05:51,000
+[044] You can try out our product and see how well it meets your needs.
+您可以試用我們的產品，看是否符合您的需求。  [try out: 試用]
+
+45
+00:05:51,000 --> 00:05:59,000
+[045] I bet it would cost a fortune.
+我敢說那會花不少錢。  [cost a fortune: 花大錢]
+
+46
+00:05:59,000 --> 00:06:07,000
+[046] I can get started with the orientation.
+我可以開始進行新生訓練。  [orientation: 新生訓練]
+
+47
+00:06:07,000 --> 00:06:16,000
+[047] I can give you the money for the security deposit today.
+我今天可以把押金交給您。  [security deposit: 押金，保證金]
+
+48
+00:06:16,000 --> 00:06:24,000
+[048] I can renew your subscription now, if you'd like.
+如果您願意，我現在可以幫您續訂。  [renew: 更新，續訂，續約]
+
+49
+00:06:24,000 --> 00:06:33,000
+[049] We can have the cake ready for you first thing in the morning.
+我們可以一早第一件事就幫您把蛋糕準備好。  [have... ready: 準備好…]
+
+50
+00:06:33,000 --> 00:06:41,000
+[050] I don't mind working extra hours to meet deadlines.
+為了在期限內完工，我不介意加班。  [deadline: 截止期限]
+
+51
+00:06:41,000 --> 00:06:49,000
+[051] I don't think we could afford to do that.
+我認為我們沒辦法負擔那樣做的費用。  [afford: 有能力負擔]
+
+52
+00:06:49,000 --> 00:06:57,000
+[052] I got stuck in rush hour traffic.
+我在尖峰時段時塞在車陣當中了。  [rush hour traffic: 尖峰時段的交通]
+
+53
+00:06:57,000 --> 00:07:07,000
+[053] I have an appointment with Dr. Park for my annual physical exam.
+我和朴醫生約好要做年度的身體檢查。  [annual physical exam: 年度身體檢查]
+
+54
+00:07:07,000 --> 00:07:17,000
+[054] I have to stay in London one more day to wrap up some business.
+我必須在倫敦多待一天，把一些業務收尾。  [wrap up: 結束，收尾]
+
+55
+00:07:17,000 --> 00:07:26,000
+[055] I just got a new glasses prescription from my eye doctor.
+我剛從眼科醫生那裡拿到了一張配鏡度數單。  [prescription: 處方]
+
+56
+00:07:26,000 --> 00:07:34,000
+[056] I need a document that shows your current address.
+我需要一份顯示你目前地址的文件。  [document: 文件]
+
+57
+00:07:34,000 --> 00:07:43,000
+[057] I probably won't be able to make it on time.
+我可能無法準時到達。  [on time: 準時]
+
+58
+00:07:43,000 --> 00:07:53,000
+[058] I recently withdrew from a course due to a scheduling conflict.
+因為課程衝突，我最近退選了一個科目。  [scheduling conflict: 行程衝突]
+
+59
+00:07:53,000 --> 00:08:01,000
+[059] I use the automatic bank withdrawal.
+我使用銀行自動扣款服務。  [automatic bank withdrawal: 銀行自動扣款]
+
+60
+00:08:01,000 --> 00:08:10,000
+[060] I was wondering if you have any chocolate cakes available.
+我想知道是否有巧克力蛋糕可以購買。  [available: 可取得的]
+
+61
+00:08:10,000 --> 00:08:18,000
+[061] I will get a few estimates from some contractors.
+我會找幾位承包商拿一些報價單。  [estimates: 報價單 = quotes]
+
+62
+00:08:18,000 --> 00:08:25,000
+[062] I wonder if they cater.
+我在想他們是否有提供外燴服務。  [cater: 提供外燴服務]
+
+63
+00:08:25,000 --> 00:08:34,000
+[063] I work almost exclusively on research.
+我幾乎只從事研究工作。  [exclusively: 排外地，僅只]
+
+64
+00:08:34,000 --> 00:08:42,000
+[064] We are going to work out an experiment.
+我們即將進行一項實驗。  [experiment: 實驗]
+
+65
+00:08:42,000 --> 00:08:51,000
+[065] I'd like to offer you the position of assistant manager.
+我想提供您副理這個職位。  [assistant manager: 副理]
+
+66
+00:08:51,000 --> 00:09:00,000
+[066] I'll be out of the office until later this afternoon.
+我今天下午晚點才會進辦公室。  [out of the office: 不在辦公室]
+
+67
+00:09:00,000 --> 00:09:09,000
+[067] I'll mark the order urgent to get it delivered tomorrow.
+我會把這筆訂單標記為急件，讓它明天可以送達。  [urgent: 緊急的]
+
+68
+00:09:09,000 --> 00:09:16,000
+[068] I'm calling to ask a favor.
+我打電話來是想請你幫個忙。  [favor: 恩惠]
+
+69
+00:09:16,000 --> 00:09:24,000
+[069] I'm going to be selling refreshments.
+我打算賣些點心食品。  [refreshments: 茶點]
+
+70
+00:09:24,000 --> 00:09:32,000
+[070] I'm sorry for the short notice.
+很抱歉臨時通知您。  [short notice: 臨時通知]
+
+71
+00:09:32,000 --> 00:09:41,000
+[071] I'm trying to put together the newsletter for next month.
+我正試著整理下個月的電子報。  [newsletter: 電子快報]
+
+72
+00:09:41,000 --> 00:09:48,000
+[072] I've been spending too much on fuel lately.
+我最近加油的花費太多了。  [fuel: 燃料]
+
+73
+00:09:48,000 --> 00:09:57,000
+[073] I've been trying all morning but I can't get online.
+我整個早上都在嘗試連上網路，但就是連不上。  [online: 上網，在線上]
+
+74
+00:09:57,000 --> 00:10:06,000
+[074] I've decided to extend my trip to do some sightseeing.
+我決定延長我的旅程，四處觀光一下。  [extend: 延長]
+
+75
+00:10:06,000 --> 00:10:15,000
+[075] I subscribe to your newspaper, but it didn't come yesterday.
+我有訂閱貴社的報紙，但到昨天還沒收到。  [subscribe: 訂閱報紙、雜誌等]
+
+76
+00:10:15,000 --> 00:10:24,000
+[076] In fact, I volunteered to help out during the concert.
+其實，我在這場音樂會當中有參與志工服務。  [volunteer: 參與志工服務]
+
+77
+00:10:24,000 --> 00:10:33,000
+[077] It is nice for the staff to get together socially.
+員工能夠私下聚會一下是件好事。  [socially: 在社交方面]
+
+78
+00:10:33,000 --> 00:10:42,000
+[078] It must have taken a lot of effort to organize the event.
+籌辦這個活動一定花了不少心力吧。  [organize: 籌劃]
+
+79
+00:10:42,000 --> 00:10:51,000
+[079] It will only take us 5 minutes to get there on foot.
+我們走路過去那裡只要五分鐘。  [on foot: 步行]
+
+80
+00:10:51,000 --> 00:11:00,000
+[080] It's important that the dining area be wheelchair accessible.
+用餐區有無障礙通道是很重要的。  [wheelchair accessible: 可供輪椅進出的]
+
+81
+00:11:00,000 --> 00:11:09,000
+[081] Just get the receipt for the cost so you can be reimbursed.
+只要把費用的收據拿來，就可以報銷。  [reimburse: 報銷]
+
+82
+00:11:09,000 --> 00:11:18,000
+[082] Let's see if Robert has any flexibility in his schedule.
+我們來看一下 Robert 的行程是否有彈性調整空間。  [flexibility: 彈性，靈活性]
+
+83
+00:11:18,000 --> 00:11:25,000
+[083] Let me explain some of the details.
+我來說明一下一些細節。  [details: 細節]
+
+84
+00:11:25,000 --> 00:11:34,000
+[084] Make your résumé stand out from other applicants.
+讓你的履歷從其他應徵者中脫穎而出吧。  [stand out: 突出，顯眼]
+
+85
+00:11:34,000 --> 00:11:42,000
+[085] Oh, I wish I had known that before.
+唉，要是我之前就知道那件事就好了。  [wish: 但願，適用假設語氣]
+
+86
+00:11:42,000 --> 00:11:50,000
+[086] One of our technicians called in sick leave.
+我們有一位技術人員打電話來請了病假。  [sick leave: 病假]
+
+87
+00:11:50,000 --> 00:11:59,000
+[087] Our events are appropriate for children as well as adults.
+我們的活動適合兒童與成人參加。  [appropriate: 適當的]
+
+88
+00:11:59,000 --> 00:12:08,000
+[088] Our new products have attracted some interest from overseas.
+我們的新產品已經吸引了一些海外顧客關注。  [attract: 吸引關注、興趣等]
+
+89
+00:12:08,000 --> 00:12:17,000
+[089] Our product line does cost a little more than others.
+我們的產品系列確實比其他品牌稍微貴一些。  [cost a little more: 稍微貴一點]
+
+90
+00:12:17,000 --> 00:12:24,000
+[090] Thanks for getting back to me so promptly.
+謝謝你這麼快就回覆我。  [promptly: 迅速地]
+
+91
+00:12:24,000 --> 00:12:32,000
+[091] That's exactly what I was thinking.
+那正是我所想的！  [exactly: 正是]
+
+92
+00:12:32,000 --> 00:12:41,000
+[092] The car runs mostly on electricity instead of gasoline.
+這輛車主要是靠電力運行，不是用汽油。  [electricity: 電力]
+
+93
+00:12:41,000 --> 00:12:49,000
+[093] The certificate is valid for a year.
+這張證書效期為一年。  [valid: 有效的]
+
+94
+00:12:49,000 --> 00:12:58,000
+[094] The chef is almost out of ingredients for the chicken.
+主廚做雞肉料理的材料幾乎要用完了。  [be almost out of: 幾乎要用完…了]
+
+95
+00:12:58,000 --> 00:13:08,000
+[095] The company will cover all your relocation expenses.
+公司將負擔您所有的搬遷費用。  [relocation expenses: 搬遷費用]
+
+96
+00:13:08,000 --> 00:13:16,000
+[096] The gallery is within walking distance.
+走幾步路就到畫廊了。  [walking distance: 步行可達的距離]
+
+97
+00:13:16,000 --> 00:13:25,000
+[097] The lecture is supposed to start in 15 minutes.
+這場講座預計在 15 分鐘後開始。  [be supposed to: 預計要，應該要]
+
+98
+00:13:25,000 --> 00:13:34,000
+[098] The medicine is for my seasonal allergies.
+這藥是給我治療季節性過敏用的。  [seasonal allergies: 季節性過敏]
+
+99
+00:13:34,000 --> 00:13:41,000
+[099] The museum is close by.
+博物館就在旁邊。  [close by: 就在旁邊]
+
+100
+00:13:41,000 --> 00:13:51,000
+[100] The shipment is behind schedule. / The project is behind schedule.
+這批貨運的進度已經延遲了。／這個專案進度落後了。  [behind schedule: 進度落後]
+
+101
+00:13:51,000 --> 00:13:59,000
+[101] The paint on the door is peeling off.
+門上的油漆正在剝落。  [peel off: 剝落]
+
+102
+00:13:59,000 --> 00:14:09,000
+[102] The space is available on a first come, first served basis.
+該空間採取先到先得的方式使用。  [first come, first served: 先到先得]
+
+103
+00:14:09,000 --> 00:14:17,000
+[103] There are a lot of dishes to choose from.
+有很多道菜可供選擇。  [choose from: 從…選擇]
+
+104
+00:14:17,000 --> 00:14:23,000
+[104] There must be a leak.
+一定有個地方會漏。  [leak: 漏出]
+
+105
+00:14:23,000 --> 00:14:31,000
+[105] These strawberries are locally grown.
+這些草莓是土生土長的。  [locally grow: 當地種植]
+
+106
+00:14:31,000 --> 00:14:40,000
+[106] They're understaffed and they're trying to find more employees.
+他們人手不足，且正試圖尋找更多員工。  [understaffed: 人手不足的]
+
+107
+00:14:40,000 --> 00:14:49,000
+[107] This schedule shows our regular hours.
+這時間表顯示了我們的正常營業時間。  [regular hours: 正常營業時間]
+
+108
+00:14:49,000 --> 00:14:58,000
+[108] This software package is better suited to my department's needs.
+這個軟體套件更適合我們部門的需求。  [suited: 合適的]
+
+109
+00:14:58,000 --> 00:15:05,000
+[109] Trains run pretty often.
+火車班次相當頻繁。  [often: 經常]
+
+110
+00:15:05,000 --> 00:15:13,000
+[110] Two of the digits were reversed.
+有兩個數字顛倒了。  [reverse: 顛倒]
+
+111
+00:15:13,000 --> 00:15:22,000
+[111] Unfortunately, several refunds weren't processed on time.
+很遺憾，有幾筆退款未能準時處理。  [process: 處理]
+
+112
+00:15:22,000 --> 00:15:32,000
+[112] We'll be doing routine maintenance on your apartment next week.
+我們將在下週對您的公寓進行定期保養。  [routine maintenance: 定期保養]
+
+113
+00:15:32,000 --> 00:15:39,000
+[113] Thanks for the heads-up.
+謝謝（您）事先告知。  [heads-up: 事先告知]
+
+114
+00:15:39,000 --> 00:15:47,680
+[114] Sports memorabilia collection
+運動紀念品收藏。  [memorabilia: 紀念品 = souvenirs]

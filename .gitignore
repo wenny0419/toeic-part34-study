@@ -1,0 +1,7 @@
+*.mp4
+*.py
+study_data.json
+_slides/
+slides_concat.txt
+__pycache__/
+*.tmp
